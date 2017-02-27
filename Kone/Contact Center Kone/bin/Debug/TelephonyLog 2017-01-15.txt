@@ -1,0 +1,38 @@
+[15/01/2017 21:31:33.016]   Starting Telephony v.2016.12.15.0 D7
+[15/01/2017 21:31:33.031]   Activating TCP server..
+[15/01/2017 21:31:33.033]   TCP Server Listening on port : 6101
+[15/01/2017 21:31:33.227]   Client Connected
+[15/01/2017 21:34:30.375]   UNREGISTER
+[15/01/2017 21:34:30.377]   UNREGISTRATION FAILED
+[15/01/2017 21:40:23.216]   Starting Telephony v.2016.12.15.0 D7
+[15/01/2017 21:40:23.217]   Activating TCP server..
+[15/01/2017 21:40:23.220]   TCP Server Listening on port : 6101
+[15/01/2017 21:40:23.653]   Client Connected
+[15/01/2017 22:16:31.096]   UNREGISTER
+[15/01/2017 22:16:31.097]   UNREGISTRATION FAILED
+[15/01/2017 22:16:31.099]   REGISTER|||
+[15/01/2017 22:16:35.002]   DIAL|9
+[15/01/2017 22:16:35.024]   Dialing 9...
+[15/01/2017 22:16:52.400]   HANGUP|CallCenter 2017-01-15 OUT rahmat 22.16.34.wav|2017-01-15
+[15/01/2017 22:16:52.403]   Request filename : CallCenter 2017-01-15 OUT rahmat 22.16.34.wav
+[15/01/2017 22:16:52.428]   CallCenter 2017-01-15 OUT rahmat 22.16.34.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[15/01/2017 22:16:52.430]   file size : 48 bytes
+[15/01/2017 22:16:52.431]   Dropping call..
+[15/01/2017 22:16:52.432]   Dropping call done
+[15/01/2017 22:16:52.434]   start wait
+[15/01/2017 22:16:52.435]   stop wait
+[15/01/2017 22:16:52.436]   Unregistered
+[15/01/2017 22:16:52.454]   UNREGISTER
+[15/01/2017 22:16:52.457]   Unregistered
+[15/01/2017 22:16:52.458]   UNREGISTRATION SUCCESS
+[15/01/2017 22:16:52.461]   REGISTER|||
+[15/01/2017 22:25:30.064]   UNREGISTER
+[15/01/2017 22:25:30.066]   Unregistered
+[15/01/2017 22:25:30.068]   UNREGISTRATION SUCCESS
+[15/01/2017 22:54:28.012]   Client Disconnected..
+[15/01/2017 22:54:41.672]   Starting Telephony v.2016.12.15.0 D7
+[15/01/2017 22:54:41.673]   Activating TCP server..
+[15/01/2017 22:54:41.676]   TCP Server Listening on port : 6101
+[15/01/2017 22:54:41.752]   Client Connected
+[15/01/2017 23:00:40.873]   UNREGISTER
+[15/01/2017 23:00:40.874]   UNREGISTRATION FAILED

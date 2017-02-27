@@ -1,0 +1,150 @@
+[03/01/2017 11:04:01.305]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:04:01.324]   Activating TCP server..
+[03/01/2017 11:04:01.328]   TCP Server Listening on port : 6093
+[03/01/2017 11:04:01.799]   Client Connected
+[03/01/2017 11:04:27.182]   UNREGISTER
+[03/01/2017 11:04:27.184]   UNREGISTRATION FAILED
+[03/01/2017 11:04:27.186]   REGISTER|192.168.0.105|2004|pbx2004
+[03/01/2017 11:04:27.209]   REGISTRATION SUCCESS
+[03/01/2017 11:05:23.554]   RINGING|2002
+[03/01/2017 11:05:33.769]   PICKUP
+[03/01/2017 11:05:33.771]   Picking up call
+[03/01/2017 11:05:33.802]   Online
+[03/01/2017 11:05:33.811]   Call is picked up
+[03/01/2017 11:05:36.162]   DISCONNECTED
+[03/01/2017 11:05:52.647]   HANGUP|CallCenter2017-01-03INrahmat11.05.52Rahmat.wav|2017-01-03
+[03/01/2017 11:05:52.649]   Request filename : CallCenter2017-01-03INrahmat11.05.52Rahmat.wav
+[03/01/2017 11:05:52.813]   CallCenter2017-01-03INrahmat11.05.52Rahmat.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Difable\Call Center\wav\
+[03/01/2017 11:05:52.815]   file size : 3688 bytes
+[03/01/2017 11:05:52.816]   start wait
+[03/01/2017 11:05:52.817]   stop wait
+[03/01/2017 11:05:52.819]   Unregistered
+[03/01/2017 11:06:05.154]   UNREGISTER
+[03/01/2017 11:06:05.156]   UNREGISTRATION FAILED
+[03/01/2017 11:06:06.339]   UNREGISTER
+[03/01/2017 11:06:06.341]   UNREGISTRATION FAILED
+[03/01/2017 11:09:33.748]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:09:33.749]   Activating TCP server..
+[03/01/2017 11:09:33.752]   TCP Server Listening on port : 6093
+[03/01/2017 11:09:34.095]   Client Connected
+[03/01/2017 11:09:58.823]   UNREGISTER
+[03/01/2017 11:09:58.825]   UNREGISTRATION FAILED
+[03/01/2017 11:09:58.827]   REGISTER|192.168.0.105|2004|pbx2004
+[03/01/2017 11:09:58.849]   REGISTRATION SUCCESS
+[03/01/2017 11:10:15.328]   RINGING|2002
+[03/01/2017 11:10:16.399]   PICKUP
+[03/01/2017 11:10:16.402]   Picking up call
+[03/01/2017 11:10:16.433]   Online
+[03/01/2017 11:10:16.444]   Call is picked up
+[03/01/2017 11:10:24.536]   HANGUP|CallCenter2017-01-03INrahmat11.10.24.wav|2017-01-03
+[03/01/2017 11:10:24.537]   Request filename : CallCenter2017-01-03INrahmat11.10.24.wav
+[03/01/2017 11:10:24.599]   CallCenter2017-01-03INrahmat11.10.24.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Difable\Call Center\wav\
+[03/01/2017 11:10:24.601]   file size : 12138 bytes
+[03/01/2017 11:10:24.605]   Dropping call..
+[03/01/2017 11:10:24.606]   Dropping call done
+[03/01/2017 11:10:24.609]   start wait
+[03/01/2017 11:10:24.611]   stop wait
+[03/01/2017 11:10:24.613]   Unregistered
+[03/01/2017 11:10:25.002]   DISCONNECTED
+[03/01/2017 11:10:29.435]   UNREGISTER
+[03/01/2017 11:10:29.437]   UNREGISTRATION FAILED
+[03/01/2017 11:10:30.671]   UNREGISTER
+[03/01/2017 11:10:30.673]   UNREGISTRATION FAILED
+[03/01/2017 11:14:15.580]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:14:15.583]   Activating TCP server..
+[03/01/2017 11:14:15.586]   TCP Server Listening on port : 6093
+[03/01/2017 11:14:16.076]   Client Connected
+[03/01/2017 11:15:48.246]   UNREGISTER
+[03/01/2017 11:15:48.248]   UNREGISTRATION FAILED
+[03/01/2017 11:15:48.250]   REGISTER|192.168.0.105|2004|pbx2004
+[03/01/2017 11:15:48.275]   REGISTRATION SUCCESS
+[03/01/2017 11:16:13.294]   RINGING|2002
+[03/01/2017 11:16:14.396]   PICKUP
+[03/01/2017 11:16:14.402]   Picking up call
+[03/01/2017 11:16:14.429]   Online
+[03/01/2017 11:16:14.438]   Call is picked up
+[03/01/2017 11:16:27.183]   HANGUP|CallCenter2017-01-03INrahmat11.16.27Kevin.wav|2017-01-03
+[03/01/2017 11:16:27.186]   Request filename : CallCenter2017-01-03INrahmat11.16.27Kevin.wav
+[03/01/2017 11:16:27.252]   CallCenter2017-01-03INrahmat11.16.27Kevin.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Difable\Call Center\wav\
+[03/01/2017 11:16:27.254]   file size : 20653 bytes
+[03/01/2017 11:16:27.256]   Dropping call..
+[03/01/2017 11:16:27.257]   Dropping call done
+[03/01/2017 11:16:27.259]   start wait
+[03/01/2017 11:16:27.262]   stop wait
+[03/01/2017 11:16:27.264]   Unregistered
+[03/01/2017 11:16:27.276]   DISCONNECTED
+[03/01/2017 11:16:31.401]   UNREGISTER
+[03/01/2017 11:16:31.403]   UNREGISTRATION FAILED
+[03/01/2017 11:17:51.867]   UNREGISTER
+[03/01/2017 11:17:51.882]   UNREGISTRATION FAILED
+[03/01/2017 11:24:28.716]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:24:28.718]   Activating TCP server..
+[03/01/2017 11:24:28.722]   TCP Server Listening on port : 6093
+[03/01/2017 11:24:29.120]   Client Connected
+[03/01/2017 11:25:01.192]   UNREGISTER
+[03/01/2017 11:25:01.194]   UNREGISTRATION FAILED
+[03/01/2017 11:31:42.514]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:31:42.516]   Activating TCP server..
+[03/01/2017 11:31:42.518]   TCP Server Listening on port : 6093
+[03/01/2017 11:31:42.569]   Client Connected
+[03/01/2017 11:33:03.939]   UNREGISTER
+[03/01/2017 11:33:03.942]   UNREGISTRATION FAILED
+[03/01/2017 11:36:46.989]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:36:46.991]   Activating TCP server..
+[03/01/2017 11:36:46.995]   TCP Server Listening on port : 6093
+[03/01/2017 11:36:47.466]   Client Connected
+[03/01/2017 11:37:17.674]   UNREGISTER
+[03/01/2017 11:37:17.677]   UNREGISTRATION FAILED
+[03/01/2017 11:37:59.400]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 11:37:59.402]   Activating TCP server..
+[03/01/2017 11:37:59.405]   TCP Server Listening on port : 6093
+[03/01/2017 11:37:59.863]   Client Connected
+[03/01/2017 11:38:29.212]   Client Disconnected..
+[03/01/2017 13:12:04.813]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 13:12:04.814]   Activating TCP server..
+[03/01/2017 13:12:04.817]   TCP Server Listening on port : 6093
+[03/01/2017 13:12:05.109]   Client Connected
+[03/01/2017 13:23:28.713]   Starting Telephony v.2015.9.8.0 D7
+[03/01/2017 13:23:28.714]   Activating TCP server..
+[03/01/2017 13:23:28.717]   TCP Server Listening on port : 6093
+[03/01/2017 13:23:28.764]   Client Connected
+[03/01/2017 13:23:35.918]   UNREGISTER
+[03/01/2017 13:23:35.921]   UNREGISTRATION FAILED
+[03/01/2017 13:23:35.922]   REGISTER|192.168.0.105|2004|pbx2004
+[03/01/2017 13:23:35.951]   REGISTRATION SUCCESS
+[03/01/2017 13:24:35.951]   Re-register
+[03/01/2017 13:24:35.954]   Unregistered
+[03/01/2017 13:24:37.466]   Re-register success
+[03/01/2017 13:25:35.950]   Re-register
+[03/01/2017 13:25:35.955]   Unregistered
+[03/01/2017 13:25:37.466]   Re-register success
+[03/01/2017 13:26:35.947]   Re-register
+[03/01/2017 13:26:35.951]   Unregistered
+[03/01/2017 13:26:37.462]   Re-register success
+[03/01/2017 13:27:35.947]   Re-register
+[03/01/2017 13:27:35.953]   Unregistered
+[03/01/2017 13:27:37.463]   Re-register success
+[03/01/2017 13:28:20.299]   UNREGISTER
+[03/01/2017 13:28:20.304]   Unregistered
+[03/01/2017 13:28:20.309]   UNREGISTRATION SUCCESS
+[03/01/2017 13:28:21.819]   UNREGISTER
+[03/01/2017 13:28:21.823]   UNREGISTRATION FAILED
+[03/01/2017 13:28:21.829]   REGISTER|192.168.0.105|2004|pbx2004
+[03/01/2017 13:28:21.839]   REGISTRATION SUCCESS
+[03/01/2017 13:28:56.632]   RINGING|2002
+[03/01/2017 13:32:35.903]   PICKUP
+[03/01/2017 13:32:35.910]   Picking up call
+[03/01/2017 13:32:35.932]   Online
+[03/01/2017 13:32:35.965]   Call is picked up
+[03/01/2017 13:32:44.256]   HANGUP|CallCenter2017-01-03INrahmat01.32.44.wav|2017-01-03
+[03/01/2017 13:32:44.264]   Request filename : CallCenter2017-01-03INrahmat01.32.44.wav
+[03/01/2017 13:32:44.325]   CallCenter2017-01-03INrahmat01.32.44.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Difable\Call Center\wav\
+[03/01/2017 13:32:44.331]   file size : 13373 bytes
+[03/01/2017 13:32:44.337]   Dropping call..
+[03/01/2017 13:32:44.342]   Dropping call done
+[03/01/2017 13:32:44.349]   start wait
+[03/01/2017 13:32:44.355]   stop wait
+[03/01/2017 13:32:44.365]   Unregistered
+[03/01/2017 13:32:44.379]   DISCONNECTED
+[03/01/2017 13:32:51.882]   UNREGISTER
+[03/01/2017 13:32:51.896]   UNREGISTRATION FAILED

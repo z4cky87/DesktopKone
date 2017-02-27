@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using MySql.Data.MySqlClient;
+using Contact_Center_Kone.Dao;
+using Contact_Center_Kone.Entity;
+using Contact_Center_Kone.Utility;
+
+namespace Contact_Center_Kone.Dao
+{
+    public class QueueActivityDao
+    {
+        DbConnectionQM MyConn = new DbConnectionQM();
+        public Entity.QueueActivity GetQueueActivity()
+        {
+            lock (Global.ThreadLockDao)
+            {
+                Entity.QueueActivity queueactivity = null;
+                string SQL = "SELECT"
+                            + " (SELECT COUNT(id) AS totalIvrQueue FROM calls WHERE DATE(ivr_date)=current_date AND is_ivr=1) AS TotalIvrQueue,"
+                            + " (SELECT COUNT(id) AS TotalQueue FROM calls WHERE is_join=1 AND is_bridge=0 AND is_hangup=0 AND is_leave=0 AND DATE(join_date)=current_date AND TIMEDIFF(CURRENT_TIMESTAMP(),join_date) < '00:01:00') AS TotalQueue,"
+                            + " (SELECT COUNT(id) AS TotalCallSystem FROM calls WHERE DATE(ivr_date)=current_date) AS TotalCallSystem,"
+                            + " (SELECT COUNT(id) AS AbandonCallSystem FROM calls WHERE is_join=0 AND is_bridge=0 AND DATE(ivr_date)=current_date) AS AbandonCallSystem";
+
+                try
+                {
+                    MyConn.Conn.Open();
+                    using (MyConn.Command = new MySql.Data.MySqlClient.MySqlCommand(SQL, MyConn.Conn))
+                    {
+                        using (MyConn.Reader = MyConn.Command.ExecuteReader())
+                        {
+                            if (MyConn.Reader.HasRows)
+                            {
+                                if (MyConn.Reader.Read())
+                                {
+                                    queueactivity = new Entity.QueueActivity();
+                                    queueactivity.TotalIvrQueue = MyConn.Reader["TotalIvrQueue"].ToString();
+                                    queueactivity.TotalCallQueue = MyConn.Reader["TotalQueue"].ToString();
+                                    queueactivity.TotalAbandonSystem = MyConn.Reader["AbandonCallSystem"].ToString();
+                                    queueactivity.TotalCallSystem = MyConn.Reader["TotalCallSystem"].ToString();
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception Ex)
+                {
+                    Utility.Global.WriteLog(Global.GetCurrentMethod(Ex));
+                }
+                finally
+                {
+                    MyConn.Conn.Close();
+                }
+
+                return queueactivity;
+            }
+        }
+    }
+}

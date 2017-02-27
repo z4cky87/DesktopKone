@@ -1,0 +1,47 @@
+[2017-01-15 21:31:41.7566]  GetQueueActivity ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 28 || Unknown database 'call_monitor'
+[2017-01-15 21:34:32.0352]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-15 21:34:33.0476]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-15 21:40:31.6482]  GetQueueActivity ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 28 || Unknown database 'call_monitor'
+[2017-01-15 22:54:15.6340]  GetListHourlyOutbound ||    at MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.ReportHourlyDao.GetListHourlyOutbound(String _datefrom, Int32 userid) || Could not find specified column in results: total_contact
+[2017-01-15 22:54:47.0745]  GetQueueActivity ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 28 || Unknown database 'call_monitor'
+[2017-01-15 23:00:42.5401]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-01-15 23:00:43.5500]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() || No connection could be made because the target machine actively refused it 127.0.0.1:6101

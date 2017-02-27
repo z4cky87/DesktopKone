@@ -1,0 +1,168 @@
+[07/02/2017 14:45:53.923]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 14:45:53.944]   Activating TCP server..
+[07/02/2017 14:45:53.947]   TCP Server Listening on port : 6101
+[07/02/2017 14:45:54.387]   Client Connected
+[07/02/2017 14:46:24.948]   UNREGISTER
+[07/02/2017 14:46:24.950]   UNREGISTRATION FAILED
+[07/02/2017 14:46:24.953]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 14:46:24.970]   REGISTRATION SUCCESS
+[07/02/2017 14:46:45.170]   RINGING|2001
+[07/02/2017 14:46:47.956]   PICKUP
+[07/02/2017 14:46:47.958]   Picking up call
+[07/02/2017 14:46:47.983]   Online
+[07/02/2017 14:46:47.990]   Call is picked up
+[07/02/2017 14:47:10.842]   HANGUP|CallCenter2017-02-07INrahmat02.47.10.wav|2017-02-07
+[07/02/2017 14:47:10.845]   Request filename : CallCenter2017-02-07INrahmat02.47.10.wav
+[07/02/2017 14:47:11.126]   CallCenter2017-02-07INrahmat02.47.10.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 14:47:11.129]   file size : 36708 bytes
+[07/02/2017 14:47:11.131]   Dropping call..
+[07/02/2017 14:47:11.133]   Dropping call done
+[07/02/2017 14:47:11.135]   start wait
+[07/02/2017 14:47:11.138]   stop wait
+[07/02/2017 14:47:11.140]   Unregistered
+[07/02/2017 14:47:11.153]   DISCONNECTED
+[07/02/2017 14:47:29.036]   UNREGISTER
+[07/02/2017 14:47:29.038]   UNREGISTRATION FAILED
+[07/02/2017 16:50:03.029]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 16:50:03.031]   Activating TCP server..
+[07/02/2017 16:50:03.034]   TCP Server Listening on port : 6101
+[07/02/2017 16:50:03.479]   Client Connected
+[07/02/2017 16:52:35.374]   UNREGISTER
+[07/02/2017 16:52:35.376]   UNREGISTRATION FAILED
+[07/02/2017 16:52:35.384]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 16:52:35.424]   REGISTRATION SUCCESS
+[07/02/2017 16:52:37.634]   RINGING|2001
+[07/02/2017 16:52:39.057]   PICKUP
+[07/02/2017 16:52:39.059]   Picking up call
+[07/02/2017 16:52:39.092]   Online
+[07/02/2017 16:52:39.103]   Call is picked up
+[07/02/2017 16:54:19.359]   HANGUP|CallCenter2017-02-07INrahmat04.54.19.wav|2017-02-07
+[07/02/2017 16:54:19.362]   Request filename : CallCenter2017-02-07INrahmat04.54.19.wav
+[07/02/2017 16:54:19.964]   CallCenter2017-02-07INrahmat04.54.19.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 16:54:19.967]   file size : 162678 bytes
+[07/02/2017 16:54:19.969]   Dropping call..
+[07/02/2017 16:54:19.971]   Dropping call done
+[07/02/2017 16:54:19.999]   start wait
+[07/02/2017 16:54:20.002]   stop wait
+[07/02/2017 16:54:20.005]   Unregistered
+[07/02/2017 16:54:20.077]   DISCONNECTED
+[07/02/2017 16:54:27.609]   UNREGISTER
+[07/02/2017 16:54:27.615]   UNREGISTRATION FAILED
+[07/02/2017 16:57:06.754]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 16:57:06.756]   Activating TCP server..
+[07/02/2017 16:57:06.768]   TCP Server Listening on port : 6101
+[07/02/2017 16:57:06.822]   Client Connected
+[07/02/2017 16:57:15.363]   UNREGISTER
+[07/02/2017 16:57:15.365]   UNREGISTRATION FAILED
+[07/02/2017 16:57:15.367]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 16:57:15.384]   REGISTRATION SUCCESS
+[07/02/2017 16:57:43.133]   RINGING|2001
+[07/02/2017 16:57:44.520]   PICKUP
+[07/02/2017 16:57:44.535]   Picking up call
+[07/02/2017 16:57:44.560]   Online
+[07/02/2017 16:57:44.579]   Call is picked up
+[07/02/2017 16:58:40.798]   HANGUP|CallCenter2017-02-07INrahmat04.58.40.wav|2017-02-07
+[07/02/2017 16:58:40.801]   Request filename : CallCenter2017-02-07INrahmat04.58.40.wav
+[07/02/2017 16:58:41.077]   CallCenter2017-02-07INrahmat04.58.40.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 16:58:41.079]   file size : 91113 bytes
+[07/02/2017 16:58:41.081]   Dropping call..
+[07/02/2017 16:58:41.082]   Dropping call done
+[07/02/2017 16:58:41.085]   start wait
+[07/02/2017 16:58:41.089]   stop wait
+[07/02/2017 16:58:41.093]   Unregistered
+[07/02/2017 16:58:41.121]   DISCONNECTED
+[07/02/2017 16:58:45.828]   UNREGISTER
+[07/02/2017 16:58:45.830]   UNREGISTRATION FAILED
+[07/02/2017 16:59:12.376]   UNREGISTER
+[07/02/2017 16:59:12.378]   UNREGISTRATION FAILED
+[07/02/2017 16:59:19.502]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 16:59:19.504]   Activating TCP server..
+[07/02/2017 16:59:19.507]   TCP Server Listening on port : 6101
+[07/02/2017 16:59:19.976]   Client Connected
+[07/02/2017 17:00:19.783]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 17:00:19.785]   Activating TCP server..
+[07/02/2017 17:00:19.788]   TCP Server Listening on port : 6101
+[07/02/2017 17:00:20.274]   Client Connected
+[07/02/2017 17:00:46.050]   UNREGISTER
+[07/02/2017 17:00:46.052]   UNREGISTRATION FAILED
+[07/02/2017 17:01:10.438]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 17:01:10.442]   Activating TCP server..
+[07/02/2017 17:01:10.445]   TCP Server Listening on port : 6101
+[07/02/2017 17:01:10.849]   Client Connected
+[07/02/2017 17:17:49.859]   UNREGISTER
+[07/02/2017 17:17:49.860]   UNREGISTRATION FAILED
+[07/02/2017 17:19:10.554]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 17:19:10.556]   Activating TCP server..
+[07/02/2017 17:19:10.560]   TCP Server Listening on port : 6101
+[07/02/2017 17:19:10.662]   Client Connected
+[07/02/2017 17:20:01.571]   Starting Telephony v.2016.12.15.0 D7
+[07/02/2017 17:20:01.579]   Activating TCP server..
+[07/02/2017 17:20:01.584]   TCP Server Listening on port : 6101
+[07/02/2017 17:20:01.990]   Client Connected
+[07/02/2017 17:20:10.333]   UNREGISTER
+[07/02/2017 17:20:10.337]   UNREGISTRATION FAILED
+[07/02/2017 17:20:10.344]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 17:20:10.369]   REGISTRATION SUCCESS
+[07/02/2017 17:20:36.633]   RINGING|2001
+[07/02/2017 17:21:03.150]   PICKUP
+[07/02/2017 17:21:03.152]   Picking up call
+[07/02/2017 17:21:03.184]   Online
+[07/02/2017 17:21:03.196]   Call is picked up
+[07/02/2017 17:22:07.508]   HANGUP|CallCenter2017-02-07INrahmat05.22.07.wav|2017-02-07
+[07/02/2017 17:22:07.511]   Request filename : CallCenter2017-02-07INrahmat05.22.07.wav
+[07/02/2017 17:22:07.887]   CallCenter2017-02-07INrahmat05.22.07.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 17:22:07.889]   file size : 104373 bytes
+[07/02/2017 17:22:07.890]   Dropping call..
+[07/02/2017 17:22:07.892]   Dropping call done
+[07/02/2017 17:22:07.895]   start wait
+[07/02/2017 17:22:07.900]   stop wait
+[07/02/2017 17:22:07.902]   Unregistered
+[07/02/2017 17:22:07.918]   DISCONNECTED
+[07/02/2017 17:22:12.896]   UNREGISTER
+[07/02/2017 17:22:12.899]   UNREGISTRATION FAILED
+[07/02/2017 17:22:14.290]   UNREGISTER
+[07/02/2017 17:22:14.292]   UNREGISTRATION FAILED
+[07/02/2017 17:22:14.294]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 17:22:14.302]   REGISTRATION SUCCESS
+[07/02/2017 17:22:38.726]   RINGING|2001
+[07/02/2017 17:22:39.810]   PICKUP
+[07/02/2017 17:22:39.814]   Picking up call
+[07/02/2017 17:22:39.843]   Online
+[07/02/2017 17:22:39.854]   Call is picked up
+[07/02/2017 17:23:36.958]   HANGUP|CallCenter2017-02-07INrahmat05.23.36.wav|2017-02-07
+[07/02/2017 17:23:36.961]   Request filename : CallCenter2017-02-07INrahmat05.23.36.wav
+[07/02/2017 17:23:37.248]   CallCenter2017-02-07INrahmat05.23.36.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 17:23:37.251]   file size : 92673 bytes
+[07/02/2017 17:23:37.252]   Dropping call..
+[07/02/2017 17:23:37.255]   Dropping call done
+[07/02/2017 17:23:37.258]   start wait
+[07/02/2017 17:23:37.262]   stop wait
+[07/02/2017 17:23:37.265]   Unregistered
+[07/02/2017 17:23:37.296]   DISCONNECTED
+[07/02/2017 17:23:43.276]   UNREGISTER
+[07/02/2017 17:23:43.278]   UNREGISTRATION FAILED
+[07/02/2017 17:23:44.191]   UNREGISTER
+[07/02/2017 17:23:44.193]   UNREGISTRATION FAILED
+[07/02/2017 17:23:46.566]   UNREGISTER
+[07/02/2017 17:23:46.568]   UNREGISTRATION FAILED
+[07/02/2017 17:23:46.571]   REGISTER|192.168.126.130|2000|ext2000
+[07/02/2017 17:23:46.585]   REGISTRATION SUCCESS
+[07/02/2017 17:24:07.686]   RINGING|2001
+[07/02/2017 17:24:08.664]   PICKUP
+[07/02/2017 17:24:08.669]   Picking up call
+[07/02/2017 17:24:08.699]   Online
+[07/02/2017 17:24:08.712]   Call is picked up
+[07/02/2017 17:24:47.392]   HANGUP|CallCenter2017-02-07INrahmat05.24.47.wav|2017-02-07
+[07/02/2017 17:24:47.396]   Request filename : CallCenter2017-02-07INrahmat05.24.47.wav
+[07/02/2017 17:24:47.569]   CallCenter2017-02-07INrahmat05.24.47.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[07/02/2017 17:24:47.573]   file size : 62643 bytes
+[07/02/2017 17:24:47.575]   Dropping call..
+[07/02/2017 17:24:47.576]   Dropping call done
+[07/02/2017 17:24:47.583]   start wait
+[07/02/2017 17:24:47.588]   stop wait
+[07/02/2017 17:24:47.593]   Unregistered
+[07/02/2017 17:24:47.637]   DISCONNECTED
+[07/02/2017 17:24:52.754]   UNREGISTER
+[07/02/2017 17:24:52.756]   UNREGISTRATION FAILED
+[07/02/2017 17:24:54.037]   UNREGISTER
+[07/02/2017 17:24:54.039]   UNREGISTRATION FAILED

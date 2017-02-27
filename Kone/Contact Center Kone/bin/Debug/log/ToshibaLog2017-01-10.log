@@ -1,0 +1,3 @@
+[2017-01-10 09:58:19.3760]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101

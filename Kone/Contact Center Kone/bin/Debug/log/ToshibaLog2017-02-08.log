@@ -1,0 +1,27 @@
+[2017-02-08 11:12:45.4808]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\UserDao.cs:line 732 || Truncated incorrect time value: '1487:52:48'
+[2017-02-08 11:12:45.7255]  GetQueueActivity ||    at MySql.Data.MySqlClient.NativeDriver.Ping()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 29 || Thread was being aborted.
+[2017-02-08 11:13:09.8823]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\UserDao.cs:line 732 || Truncated incorrect time value: '1487:53:13'
+[2017-02-08 11:13:12.3318]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-02-08 11:13:13.4102]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101

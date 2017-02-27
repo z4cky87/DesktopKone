@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  
+  <appSettings>
+
+    <!-- Localhost -->
+    <add key="conString" value="Server=localhost;user id=root;password=;database=cc_kone;" />
+    <add key="dbconnQM" value="Server=localhost;user id=root;password=;database=call_monitor;" />
+
+
+    <!-- Production -->
+    <add key="conString" value="Server=192.168.0.106;user id=root;password=-kilatdanpetir-;database=cc_kone;" />
+    <add key="dbconnQM" value="Server=192.168.0.106;user id=root;password=-kilatdanpetir-;database=call_monitor;" />
+    <add key="atacchment_inbox" value="/var/www/html/Contactcenter/email/attachments/inbox/" />
+    <add key="atacchment_outbox" value="/var/www/html/Contactcenter/email/attachments/outbox/" />
+    <add key="attachment_http_inbox" value="http://192.168.0.106/Contactcenter/email/attachments/inbox/" />
+    <add key="attachment_http_outbox" value="http://192.168.0.106/Contactcenter/email/attachments/outbox/" />
+    <add key="attachment_http_outbox_php" value="http://192.168.0.106/Contactcenter/upload/upload-mail-attachment.php" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="web_create_ticket" value="http://192.168.0.223/mulia-ceramics/ticket/desktop/check?action=create" />
+    <add key="web_ticket_managment" value="http://192.168.0.223/mulia-ceramics/ticket/desktop/check?action=view" />
+    <add key="location_voicemail" value="http://192.168.0.105" />
+    <add key="websocketUri" value="ws://192.168.0.106:54321/" />
+
+
+    <!-- Developer -->
+    <!--<add key="conString" value="Server=192.168.0.161;user id=root;password=j@r1ng;database=cc_kone;" />
+    <add key="dbconnQM" value="Server=192.168.0.161;user id=root;password=j@r1ng;database=call_monitor;" />
+    <add key="atacchment_inbox" value="/var/www/html/Kone/email/attachments/inbox/" />
+    <add key="atacchment_outbox" value="/var/www/html/Kone/email/attachments/outbox/" />
+    <add key="attachment_http_inbox" value="http://192.168.0.161/Kone/email/attachments/inbox/" />
+    <add key="attachment_http_outbox" value="http://192.168.0.161/Kone/email/attachments/outbox/" />
+    <add key="attachment_http_outbox_php" value="http://192.168.0.161/Kone/upload/upload-mail-attachment.php" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="web_create_ticket" value="http://192.168.0.223/mulia-ceramics/ticket/desktop/check?action=create" />
+    <add key="web_ticket_managment" value="http://192.168.0.223/mulia-ceramics/ticket/desktop/check?action=view" />
+    <add key="location_voicemail" value="http://192.168.0.105" />
+    <add key="websocketUri" value="ws://192.168.0.161:54321/" />-->
+
+    <!-- All -->
+    <add key="sftp_host" value="192.168.0.100" />
+    <add key="sftp_user" value="root" />
+    <add key="sftp_pwd" value="J@R1ng" />
+
+  </appSettings>
+ 
+  <runtime>
+ 
+      <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+ 
+          <dependentAssembly>
+ 
+              <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+ 
+              <bindingRedirect oldVersion="0.0.0.0-2.2.29.0" newVersion="2.2.29.0" />
+ 
+          </dependentAssembly>
+ 
+          <dependentAssembly>
+ 
+              <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+ 
+              <bindingRedirect oldVersion="0.0.0.0-9.0.0.0" newVersion="9.0.0.0" />
+ 
+          </dependentAssembly>
+ 
+      </assemblyBinding>
+ 
+  </runtime>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" /></startup></configuration>

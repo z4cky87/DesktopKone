@@ -1,0 +1,541 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+using System.Threading;
+using Contact_Center_Kone.Utility;
+
+namespace Contact_Center_Kone.View
+{
+    public partial class OutboundCall : Form
+    {
+        public View.Main mainForm;
+        private Dao.OutboundTypeDetailDao outboundTypDetailDao = new Dao.OutboundTypeDetailDao();
+        private Dao.CallDao callDao = new Dao.CallDao();
+        private Dao.CallTagDao callTagDao = new Dao.CallTagDao();
+        private Dao.OutboundCallMediaDao outboundCallMediaDao = new Dao.OutboundCallMediaDao();
+        private Dao.TagTicketDao tagTicketDao = new Dao.TagTicketDao();
+        Dao.OutboundCallerTypeDao callerTypeDao = new Dao.OutboundCallerTypeDao();
+
+        private Entity.TagTicket tagTicket = new Entity.TagTicket();
+
+        private DateTime callTime; 
+        private string callId = "0";
+        private string mediaId = "";
+        private string sourceMediaId = "";
+        private string voiceFileName = "";
+        private string ticketId = "";
+
+        // took this code from : http://stackoverflow.com/questions/7301825/windows-forms-how-to-hide-close-x-button
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int CP_NOCLOSE = 0x200;
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE;
+                return myCp;
+            }
+        }
+
+        #region Load data
+        //void LoadOutboundTypes()
+        //{
+        //    //var getAllData=inboundTypeDao.GetAll();
+
+        //    this.cmbCallerType.DataSource = callerTypeDao.GetListOutboundCallerType();
+        //    this.cmbCallerType.ValueMember = "id";
+        //    this.cmbCallerType.DisplayMember = "type";
+
+        //}
+
+        void LoadCallerTypeDetail()
+        {
+            try
+            {
+                this.cmbCallerTypeDetail.DataSource = null;
+                this.cmbCallerTypeDetail.DataSource = new Dao.OutboundCallerTypeDetailDao().GetAllByCallerType(this.cmbCallerType.SelectedValue.ToString());
+                this.cmbCallerTypeDetail.ValueMember = "id";
+                this.cmbCallerTypeDetail.DisplayMember = "name";
+            }
+            catch { }
+        }
+
+        void LoadCallerType()
+        {
+            try
+            {
+                this.cmbCallerType.DataSource = new Dao.OutboundCallerTypeDao().GetListCallerType();
+                this.cmbCallerType.DisplayMember = "type";
+                this.cmbCallerType.ValueMember = "id";
+            }
+            catch { }
+        }
+        #endregion
+        public OutboundCall(string ticketId,string phoneNo)
+        {
+            InitializeComponent();
+            LoadCallerType();
+            LoadCallerTypeDetail();
+            this.txtCall.Text = phoneNo;
+            this.ticketId = ticketId;
+
+            //this.tagTicket = new Entity.TagTicket();
+            //this.tagTicket.ticket_id = Convert.ToInt32(this.ticketId);
+
+            //LoadOutboundCallerType();
+            //LoadOutboundTypes();
+            btnSaveDataCall.Enabled = false;
+            btnTagTicket.Enabled = false;
+            this.btnCall.BackColor = Color.GreenYellow;
+            this.btnCall.Enabled = (Global.callState == Global.CallState.READY);
+        }
+
+        public OutboundCall(String phoneNumber, string mediaId, string sourceMediaId)
+        {
+            InitializeComponent();
+            LoadCallerType();
+            LoadCallerTypeDetail();
+            //LoadOutboundCallerType();
+           // LoadOutboundTypes();
+            btnSaveDataCall.Enabled = false;
+            btnTagTicket.Enabled = false;
+            this.btnCall.BackColor = Color.GreenYellow;
+            this.btnCall.Enabled = (Global.callState == Global.CallState.READY);
+
+
+            txtCall.Text = phoneNumber;
+            this.mediaId = mediaId;
+            this.sourceMediaId = sourceMediaId;
+
+          
+        }
+
+        public OutboundCall(Entity.Ticket ticket, string phoneNo)
+        {
+            InitializeComponent();
+            LoadCallerType();
+            LoadCallerTypeDetail();
+           // LoadOutboundCallerType();
+            //LoadOutboundTypes();
+            btnSaveDataCall.Enabled = false;
+            btnTagTicket.Enabled = false;
+
+            txtCall.Text = phoneNo;
+            this.btnCall.BackColor = Color.GreenYellow;
+            this.btnCall.Enabled = (Global.callState == Global.CallState.READY);
+
+            btnTagTicket.Enabled = false; // disable btnTagTicket, ticket tagging will be done automatically
+
+            this.tagTicket = new Entity.TagTicket();
+            this.tagTicket.ticket_id = ticket.id;
+        }
+
+        public OutboundCall(Entity.Call call)
+        {
+            InitializeComponent();
+            //LoadOutboundCallerType();
+            //LoadOutboundTypes();
+
+            LoadCallerType();
+            LoadCallerTypeDetail();
+
+            btnCall.Enabled = false;
+            btnMute.Enabled = false;
+            btnHold.Enabled = false;
+            btnHide.Enabled = false;
+
+            this.callId = call.id.ToString() ;
+
+            //var callTags = callTagDao.getByCallId(call.id.ToString());
+            //foreach (var callTag in callTags)
+            //{
+            //    if (callTag.typeId == "1")
+            //    {
+            //        chkOrder.Checked = true;
+            //        cmbOrder.SelectedValue = outboundTypDetailDao.GetById(callTag.typeDetailId).id;
+            //    }
+            //    if (callTag.typeId == "2")
+            //    {
+            //        chkService.Checked = true;
+            //        cmbSurvey.SelectedValue = outboundTypDetailDao.GetById(callTag.typeDetailId).id;
+            //    }
+            //}
+
+            txtName.Text = call.callerName;
+            lbDuration.Text = call.duration;
+            txtCall.Text = call.callerNumber;
+            txtNote.Text = call.note;
+
+            if (String.IsNullOrEmpty(call.CallerTypeName)) { this.cmbCallerType.SelectedIndex = 0; }
+            else { this.cmbCallerType.Text = call.CallerTypeName; }
+
+            if (String.IsNullOrEmpty(call.callerTypeDetailName)) { this.cmbCallerTypeDetail.SelectedIndex = 0; }
+            else { this.cmbCallerTypeDetail.Text = call.callerTypeDetailName; }
+           // this.cmbCallerType.Text = call.inboundCallerTypeName;
+           // this.txtCustomerId.Text = call.customerId;
+        }
+
+        private void defineCallMedia()
+        {
+            if (sourceMediaId != "" && mediaId != "")
+            {
+                Entity.OutboundCallMedia outboundCallMedia = new Entity.OutboundCallMedia();
+                outboundCallMedia.callId = callId;
+                outboundCallMedia.mediaId = mediaId;
+                outboundCallMedia.sourceMediaId = sourceMediaId;
+                outboundCallMediaDao.insert(outboundCallMedia);
+            }
+        }
+
+        private void tagToTicket()
+        {
+            try
+            {
+                this.tagTicket.media_id = Convert.ToInt32(this.callId);
+                this.tagTicket.source_media_id = 5; // 5 = outbound call
+                this.tagTicket.ticket_id = Convert.ToInt32(this.ticketId);
+                tagTicketDao.Insert(this.tagTicket);
+            }
+            catch { }
+            
+        }
+
+        //private void defineCallTag()
+        //{
+        //    String isOrder = "0";
+        //    String orderDetail = "0";
+        //    String isSurvey = "0";
+        //    String surveyDetail = "0";
+
+        //    if (chkOrder.Checked)
+        //    {
+        //        if (cmbOrder.SelectedValue != null)
+        //        {
+        //            isOrder = "1";
+        //            orderDetail = cmbOrder.SelectedValue.ToString();
+        //        }
+        //    }
+
+        //    if (chkService.Checked)
+        //    {
+        //        if (cmbSurvey.SelectedValue != null)
+        //        {
+        //            isSurvey = "2";
+        //            surveyDetail = cmbSurvey.SelectedValue.ToString();
+        //        }
+        //    }
+
+        //    callTagDao.Delete(this.callId);
+
+        //    if (isOrder != "0" && orderDetail != "0")
+        //        callTagDao.Insert(this.callId, isOrder, orderDetail);
+
+        //    if (isSurvey != "0" && surveyDetail != "0")
+        //        callTagDao.Insert(this.callId, isSurvey, surveyDetail);
+        //}
+
+        private void doCall()
+        {
+            callTime = DateTime.Now;
+
+            txtCall.BackColor = Color.LemonChiffon;
+            this.btnCall.Text = "Hangup";
+            this.btnCall.BackColor = Color.LightYellow;
+            this.btnMute.Enabled = true;
+            this.btnHold.Enabled = true;
+            this.btnSaveDataCall.Enabled = true;
+            btnTagTicket.Enabled = (tagTicket == null);
+
+
+            Global.mainForm.myTelepon.MakeCall(this.txtCall.Text);
+            Global.callState = Global.CallState.OUTCALL;
+            timerCallDuration.Enabled = true;
+
+            createCall();// insert call in database
+
+            ConnectStatus connectStatus = new ConnectStatus(2); // 2=Unconnect
+            if (connectStatus.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // connected call
+
+                txtCall.BackColor = Color.LightGreen;
+
+                Entity.Call call = new Entity.Call();
+                call.id = Convert.ToInt32(callId);
+                call.outboundStatus = new Entity.OutboundStatus { id = 1 }; // 1=connected
+                callDao.setOutboundStatus(call);
+            }
+            else
+            {
+                // Unconnected call
+                Entity.Call call = new Entity.Call();
+                call.id = Convert.ToInt32(callId);
+                call.outboundStatus = new Entity.OutboundStatus { id = 2 }; // 2=unconnected
+                call.outboundStatusDetail = new Entity.OutboundStatusDetail { id = Convert.ToInt32(connectStatus.cmbReason.SelectedValue) };
+                callDao.setOutboundStatus(call);
+                callDao.setOutboundStatusDetail(call);
+
+                doHangup();
+            }
+        }
+
+        private void createCall()
+        {
+            if (txtName.Text.Trim() != "")
+                voiceFileName = "CallCenter " + callTime.ToString("yyyy-MM-dd") + " OUT " + Global.userAccount.username + " " + callTime.ToString("HH.mm.ss") + " " + txtName.Text.Trim() + ".wav";
+            else
+                voiceFileName = "CallCenter " + callTime.ToString("yyyy-MM-dd") + " OUT " + Global.userAccount.username + " " + callTime.ToString("HH.mm.ss") + ".wav";
+
+
+            Entity.Call call = new Entity.Call();
+            call.callDate = callTime.ToString("yyyy-MM-dd HH:mm:ss");
+            call.inboundCallerType = new Entity.CallerType() { id = this.cmbCallerType.SelectedIndex == 0 ? null : this.cmbCallerType.SelectedValue.ToString() };
+            call.callerTypeDetail = new Entity.CallerTypeDetail() { id =this.cmbCallerTypeDetail.SelectedIndex==0? null:this.cmbCallerTypeDetail.SelectedValue.ToString() };
+            call.callerNumber = txtCall.Text;
+            call.callerName = txtName.Text;
+            call.direction = new Entity.Direction { id = 2 };
+            call.note = txtNote.Text;
+            call.user = Global.userAccount;
+            call.shift = new Entity.Shift { id = Global.shiftId };
+            call.voiceFile = voiceFileName;
+            call.hostAddress = Global.LocalIPAddress();
+            call.hostName = Global.LocalCompName();
+            call.extension = Global.userAccount.inbound_ext;
+            call.busy = "00:00:00";
+           // call.inboundCategory = new Entity.InboundCategory() { id = null };
+
+            if (callDao.Insert(call, out callId))
+            {
+                call.id = Convert.ToInt32(callId);
+                //defineCallTag();
+                defineCallMedia();
+                tagToTicket();
+            }
+        }
+
+        private void updateCall()
+        {
+            Entity.Call call = new Entity.Call();
+            call.id = Convert.ToInt32(callId);
+           // call.customerId = this.txtCustomerId.Text;
+            call.callerNumber = txtCall.Text;
+            call.callerName = txtName.Text;
+            call.direction = new Entity.Direction { id = 2 };
+            call.duration = lbDuration.Text;
+            //call.inboundCallerType = new Entity.InboundCallerType() { id = cmbCallerType.SelectedValue.ToString() };
+            call.inboundCallerType = new Entity.CallerType() { id = this.cmbCallerType.SelectedIndex == 0 ? null : this.cmbCallerType.SelectedValue.ToString() };
+            call.callerTypeDetail = new Entity.CallerTypeDetail() { id = this.cmbCallerTypeDetail.SelectedIndex == 0 ? null : this.cmbCallerTypeDetail.SelectedValue.ToString() };
+           // call.inboundCategory = new Entity.InboundCategory() { id = null };
+            call.area = new Entity.Area() { id = null };
+            call.note = txtNote.Text;
+            call.voiceFile = voiceFileName;
+            
+
+            if (callDao.Update(call))
+            {
+                //defineCallTag();
+            }
+
+
+        }
+
+        private void doHangup()
+        {
+            txtCall.BackColor = Color.LemonChiffon;
+            this.btnMute.Enabled = false;
+            this.btnHold.Enabled = false;
+            this.btnCall.BackColor = Color.GreenYellow;
+            this.btnCall.Text = "Call";
+          //  string fileNameHangup = "CallCenter" + System.DateTime.Now.ToString("yyyy-MM-dd") + "OUT" + Global.userAccount.username + System.DateTime.Now.ToString("hh.mm.ss") + this.txtName.Text + ".wav";
+            Global.mainForm.myTelepon.Hangup(voiceFileName);
+            Global.callState = Global.CallState.BUSY;
+            updateCall();
+            Global.callState = Global.CallState.READY;
+            Global.mainForm.myTelepon.UnregisterPabx();
+            Global.mainForm.myTelepon.RegisterToPabx(Global.userAccount.pbx_outbound, Global.userAccount.outbound_ext, Global.userAccount.outbound_ext_pwd);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.txtCall.Text = this.txtCall.Text.Substring(0, txtCall.Text.Length - 1);
+            }
+            catch { }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.txtCall.Clear();
+        }
+
+        private void btnCall_Click(object sender, EventArgs e)
+        {
+            if (this.btnCall.Text.ToUpper() == "CALL") {
+                if (txtCall.Text.Trim() != "")
+                doCall();
+            }
+            else
+            {
+                doHangup();
+
+                ConnectStatus connectStatus = new ConnectStatus(4); // 4=Uncontact
+
+                if (connectStatus.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    // contacted call
+                    Entity.Call call = new Entity.Call();
+                    call.id = Convert.ToInt32(callId);
+                    call.outboundStatus = new Entity.OutboundStatus { id = 3 }; // 3=Contacted
+                    callDao.setOutboundStatus(call);
+                }
+                else
+                {
+                    Entity.Call call = new Entity.Call();
+                    call.id = Convert.ToInt32(callId);
+                    call.outboundStatus = new Entity.OutboundStatus { id = 4 }; // 4=unconnected
+                    call.outboundStatusDetail = new Entity.OutboundStatusDetail { id = Convert.ToInt32(connectStatus.cmbReason.SelectedValue) };
+                    callDao.setOutboundStatus(call);
+                    callDao.setOutboundStatusDetail(call);
+                }
+            }
+        }
+
+        private void btnMute_Click(object sender, EventArgs e)
+        {
+            if (this.btnMute.Text.ToUpper() == "MUTE")
+            {
+                this.btnMute.Text = "Unmute";
+                Global.mainForm.myTelepon.Mute();
+            }
+            else
+            {
+                this.btnMute.Text = "Mute";
+                Global.mainForm.myTelepon.UnMute();
+
+            }
+        }
+
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            if (this.btnHold.Text.ToUpper() == "HOLD")
+            {
+                this.btnHold.Text = "Unhold";
+                Global.mainForm.myTelepon.Hold();
+            }
+            else
+            {
+                this.btnHold.Text = "Hold";
+                Global.mainForm.myTelepon.UnHold();
+
+            }
+        }
+
+        private void OutboundCall_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void btnSaveDataCall_MouseDown(object sender, MouseEventArgs e)
+        {
+             
+        }
+
+        private void OutboundCall_Load(object sender, EventArgs e)
+        {
+            //LoadOutboundTypes();
+        }
+
+       
+
+        private void digitButtonClick(object sender, EventArgs e)
+        {
+            if (Global.callState == Global.CallState.OUTCALL)
+                mainForm.myTelepon.DTMF(((Button)sender).Text);
+            else
+                this.txtCall.Text += ((Button)sender).Text;
+        }
+
+        private void btnSaveDataCall_Click(object sender, EventArgs e)
+        {
+            updateCall();
+            MessageBox.Show("Saved success.");
+        }
+
+        private void btnTagTicket_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                View.FindTicket findTicket = new FindTicket(Convert.ToInt32(this.callId));
+                findTicket.outboundform = this;
+                findTicket.enumtagticket = FindTicket.TagTicketSourceMedia.CallOutbound;
+                findTicket.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
+                Global.WriteLog(Global.GetCurrentMethod(Ex));
+            }
+        }
+
+        private void timerCallDuration_Tick(object sender, EventArgs e)
+        {
+            if (Global.callState == Global.CallState.OUTCALL)
+            {
+                DateTime currTime = DateTime.Now;
+                TimeSpan span = currTime.Subtract(callTime);
+                TimeSpan getDataDuration = new TimeSpan(span.Hours, span.Minutes, span.Seconds);
+                this.lbDuration.Text = new DateTime(getDataDuration.Ticks).ToString("HH:mm:ss");
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (Global.callState != Global.CallState.OUTCALL)
+            {
+                this.Dispose();
+                Global.mainForm.outboundCallForm = null;
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Global.mainForm.btn_maximize.BackColor = Color.Yellow;
+            Global.mainForm.btn_maximize.Text = "Outbound Call";
+            Global.mainForm.btn_maximize.Font = new Font("Verdana", 8, FontStyle.Regular);
+            Global.mainForm.btn_maximize.ForeColor = Color.OrangeRed;
+        }
+
+        private void checkTemplate_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTemplate.Checked == true)
+            {
+                string template = string.Empty;
+                template += "1. Teknisi Datang Tepat Waktu?\r\n";
+                template += "2. Teknisi Memakai Seragam?\r\n";
+                template += "3. Teknisi Menjelaskan Kerusakan Produk?\r\n";
+                template += "4. Teknisi Menjelaskan Cara Perbaikan dan Perawatan Produk?\r\n";
+                template += "5. Teknisi Menjelaskan Rincian Biaya?\r\n";
+                template += "7. Survey NPS (Net Promoter Score), Tingkat Keinginan Mempromosikan:?\r\n";
+                txtNote.Text = template;
+            }
+            else
+                txtNote.Clear();
+        }
+
+        private void cmbCallerType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadCallerTypeDetail();
+            //MessageBox.Show(this.cmbCallerType.SelectedValue.ToString());
+        }
+
+        
+
+    }
+}

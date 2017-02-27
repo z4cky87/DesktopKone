@@ -1,0 +1,6 @@
+[30/01/2017 13:42:02.993]   Starting Telephony v.2016.12.15.0 D7
+[30/01/2017 13:42:03.014]   Activating TCP server..
+[30/01/2017 13:42:03.017]   TCP Server Listening on port : 6101
+[30/01/2017 13:42:03.391]   Client Connected
+[30/01/2017 13:43:00.629]   UNREGISTER
+[30/01/2017 13:43:00.630]   UNREGISTRATION FAILED

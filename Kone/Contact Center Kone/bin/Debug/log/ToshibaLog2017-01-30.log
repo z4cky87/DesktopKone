@@ -1,0 +1,13 @@
+[2017-01-30 13:43:00.4642]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() || Truncated incorrect time value: '1466:12:41'
+[2017-01-30 13:43:02.3924]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-01-30 13:43:03.4182]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() || No connection could be made because the target machine actively refused it 127.0.0.1:6101

@@ -1,0 +1,195 @@
+﻿namespace Contact_Center_Kone.View
+{
+    partial class Model
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbProductType = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.dtgridModel = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridModel)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dtgridModel, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(877, 444);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnRefresh);
+            this.panel1.Controls.Add(this.txtModel);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.cmbProductType);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(871, 54);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Image = global::Contact_Center_Kone.Properties.Resources.refresh_green;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(409, 27);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(65, 23);
+            this.btnRefresh.TabIndex = 18;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // txtModel
+            // 
+            this.txtModel.Location = new System.Drawing.Point(160, 29);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(175, 20);
+            this.txtModel.TabIndex = 17;
+            this.txtModel.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(157, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Model";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 15);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Product Type";
+            // 
+            // cmbProductType
+            // 
+            this.cmbProductType.BackColor = System.Drawing.Color.White;
+            this.cmbProductType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProductType.FormattingEnabled = true;
+            this.cmbProductType.Location = new System.Drawing.Point(9, 29);
+            this.cmbProductType.Name = "cmbProductType";
+            this.cmbProductType.Size = new System.Drawing.Size(145, 21);
+            this.cmbProductType.TabIndex = 12;
+            this.cmbProductType.SelectedIndexChanged += new System.EventHandler(this.cmbProductType_SelectedIndexChanged);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = global::Contact_Center_Kone.Properties.Resources.search;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(342, 27);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(65, 23);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // dtgridModel
+            // 
+            this.dtgridModel.AllowUserToAddRows = false;
+            this.dtgridModel.AllowUserToDeleteRows = false;
+            this.dtgridModel.BackgroundColor = System.Drawing.Color.White;
+            this.dtgridModel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridModel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgridModel.EnableHeadersVisualStyles = false;
+            this.dtgridModel.Location = new System.Drawing.Point(3, 63);
+            this.dtgridModel.MultiSelect = false;
+            this.dtgridModel.Name = "dtgridModel";
+            this.dtgridModel.ReadOnly = true;
+            this.dtgridModel.RowHeadersVisible = false;
+            this.dtgridModel.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dtgridModel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgridModel.Size = new System.Drawing.Size(871, 378);
+            this.dtgridModel.TabIndex = 1;
+            this.dtgridModel.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridModel_CellContentDoubleClick);
+            this.dtgridModel.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridModel_CellDoubleClick);
+            this.dtgridModel.DoubleClick += new System.EventHandler(this.dtgridModel_DoubleClick);
+            // 
+            // Model
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(877, 444);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimizeBox = false;
+            this.Name = "Model";
+            this.ShowIcon = false;
+            this.Text = "Searching Model";
+            this.Load += new System.EventHandler(this.Model_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridModel)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmbProductType;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridView dtgridModel;
+        private System.Windows.Forms.Button btnRefresh;
+    }
+}

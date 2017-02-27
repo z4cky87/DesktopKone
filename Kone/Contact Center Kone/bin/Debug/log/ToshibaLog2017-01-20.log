@@ -1,0 +1,13 @@
+[2017-01-20 17:14:27.2102]  GetQueueActivity ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 28 || Unknown database 'call_monitor'
+[2017-01-20 17:19:01.0936]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host

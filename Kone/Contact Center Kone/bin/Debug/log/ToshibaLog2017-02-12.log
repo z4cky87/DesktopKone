@@ -1,0 +1,5 @@
+[2017-02-12 07:49:51.5547]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-02-12 07:49:52.5739]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101

@@ -1,0 +1,102 @@
+[23/12/2016 10:51:06.218]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 10:51:06.231]   Activating TCP server..
+[23/12/2016 10:51:06.233]   TCP Server Listening on port : 6093
+[23/12/2016 10:51:06.316]   Client Connected
+[23/12/2016 10:51:14.501]   UNREGISTER
+[23/12/2016 10:51:14.501]   UNREGISTRATION FAILED
+[23/12/2016 11:03:57.711]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:03:57.712]   Activating TCP server..
+[23/12/2016 11:03:57.715]   TCP Server Listening on port : 6093
+[23/12/2016 11:03:57.813]   Client Connected
+[23/12/2016 11:04:54.060]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:04:54.062]   Activating TCP server..
+[23/12/2016 11:04:54.064]   TCP Server Listening on port : 6093
+[23/12/2016 11:04:54.120]   Client Connected
+[23/12/2016 11:05:26.463]   UNREGISTER
+[23/12/2016 11:05:26.464]   UNREGISTRATION FAILED
+[23/12/2016 11:06:00.072]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:06:00.073]   Activating TCP server..
+[23/12/2016 11:06:00.076]   TCP Server Listening on port : 6093
+[23/12/2016 11:06:00.505]   Client Connected
+[23/12/2016 11:06:59.852]   UNREGISTER
+[23/12/2016 11:06:59.854]   UNREGISTRATION FAILED
+[23/12/2016 11:07:15.288]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:07:15.289]   Activating TCP server..
+[23/12/2016 11:07:15.292]   TCP Server Listening on port : 6093
+[23/12/2016 11:07:15.299]   Client Connected
+[23/12/2016 11:07:38.460]   UNREGISTER
+[23/12/2016 11:07:38.460]   UNREGISTRATION FAILED
+[23/12/2016 11:07:44.665]   UNREGISTER
+[23/12/2016 11:07:44.665]   UNREGISTRATION FAILED
+[23/12/2016 11:08:09.064]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:08:09.066]   Activating TCP server..
+[23/12/2016 11:08:09.069]   TCP Server Listening on port : 6093
+[23/12/2016 11:08:09.118]   Client Connected
+[23/12/2016 11:08:20.394]   UNREGISTER
+[23/12/2016 11:08:20.394]   UNREGISTRATION FAILED
+[23/12/2016 11:10:10.272]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:10:10.274]   Activating TCP server..
+[23/12/2016 11:10:10.277]   TCP Server Listening on port : 6093
+[23/12/2016 11:10:10.628]   Client Connected
+[23/12/2016 11:11:56.746]   UNREGISTER
+[23/12/2016 11:11:56.748]   UNREGISTRATION FAILED
+[23/12/2016 11:13:29.002]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:13:29.003]   Activating TCP server..
+[23/12/2016 11:13:29.005]   TCP Server Listening on port : 6093
+[23/12/2016 11:13:29.063]   Client Connected
+[23/12/2016 11:18:13.278]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:18:13.279]   Activating TCP server..
+[23/12/2016 11:18:13.281]   TCP Server Listening on port : 6093
+[23/12/2016 11:18:13.406]   Client Connected
+[23/12/2016 11:20:40.618]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:20:40.620]   Activating TCP server..
+[23/12/2016 11:20:40.622]   TCP Server Listening on port : 6093
+[23/12/2016 11:20:41.118]   Client Connected
+[23/12/2016 11:20:52.133]   UNREGISTER
+[23/12/2016 11:20:52.133]   UNREGISTRATION FAILED
+[23/12/2016 11:21:25.324]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:21:25.339]   Activating TCP server..
+[23/12/2016 11:21:25.342]   TCP Server Listening on port : 6093
+[23/12/2016 11:21:25.832]   Client Connected
+[23/12/2016 11:25:53.043]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:25:53.044]   Activating TCP server..
+[23/12/2016 11:25:53.046]   TCP Server Listening on port : 6093
+[23/12/2016 11:25:53.138]   Client Connected
+[23/12/2016 11:26:01.206]   UNREGISTER
+[23/12/2016 11:26:01.208]   UNREGISTRATION FAILED
+[23/12/2016 11:26:55.601]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:26:55.602]   Activating TCP server..
+[23/12/2016 11:26:55.604]   TCP Server Listening on port : 6093
+[23/12/2016 11:26:55.698]   Client Connected
+[23/12/2016 11:26:58.767]   Client Disconnected..
+[23/12/2016 11:27:09.460]   Terminate Telephony
+[23/12/2016 11:34:43.113]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:34:43.114]   Activating TCP server..
+[23/12/2016 11:34:43.116]   TCP Server Listening on port : 6093
+[23/12/2016 11:34:43.226]   Client Connected
+[23/12/2016 11:35:01.787]   Client Disconnected..
+[23/12/2016 11:35:24.968]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:35:24.969]   Activating TCP server..
+[23/12/2016 11:35:24.972]   TCP Server Listening on port : 6093
+[23/12/2016 11:35:25.013]   Client Connected
+[23/12/2016 11:35:26.617]   Client Disconnected..
+[23/12/2016 11:35:41.538]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 11:35:41.539]   Activating TCP server..
+[23/12/2016 11:35:41.542]   TCP Server Listening on port : 6093
+[23/12/2016 11:35:41.675]   Client Connected
+[23/12/2016 11:35:44.399]   Client Disconnected..
+[23/12/2016 13:02:50.419]   Terminate Telephony
+[23/12/2016 13:22:36.610]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 13:22:36.613]   Activating TCP server..
+[23/12/2016 13:22:36.617]   TCP Server Listening on port : 6093
+[23/12/2016 13:22:37.117]   Client Connected
+[23/12/2016 13:23:05.682]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 13:23:05.684]   Activating TCP server..
+[23/12/2016 13:23:05.686]   TCP Server Listening on port : 6093
+[23/12/2016 13:23:05.703]   Client Connected
+[23/12/2016 13:26:25.906]   UNREGISTER
+[23/12/2016 13:26:25.908]   UNREGISTRATION FAILED
+[23/12/2016 14:13:44.813]   Starting Telephony v.2015.9.8.0 D7
+[23/12/2016 14:13:44.815]   Activating TCP server..
+[23/12/2016 14:13:44.818]   TCP Server Listening on port : 6093
+[23/12/2016 14:13:45.297]   Client Connected

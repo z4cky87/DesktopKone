@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74A1233D-8E43-4F6A-815E-88E3E8F7AEDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contact_Center_Kone</RootNamespace>
+    <AssemblyName>CC_Kone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1390829941_47543.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CryptSharp">
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\CryptSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="DiffieHellman">
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\DiffieHellman.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Core, Version=29.0.10.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\Geckofx-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Winforms, Version=29.0.10.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\Geckofx-Winforms.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaControl">
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\MediaControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\dkanggrespc\Documents\Virtual Machines\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Org.Mentalis.Security">
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\Org.Mentalis.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http">
+      <HintPath>bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\MNC Nipress\Contact Center Nipres\Contact Center Nipres\bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>bin\Debug\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tamir.SharpSSH">
+      <HintPath>..\Toshiba\Contact Center Toshiba\bin\Debug\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net, Version=0.14.1.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>packages\WebSocket4Net.0.14.1\lib\net40\WebSocket4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\AreaDao.cs" />
+    <Compile Include="Dao\BreakReasonDao.cs" />
+    <Compile Include="Dao\CallDao.cs" />
+    <Compile Include="Dao\CallerTypeDao.cs" />
+    <Compile Include="Dao\CallTagDao.cs" />
+    <Compile Include="Dao\DashboardDao.cs" />
+    <Compile Include="Dao\DepartmentDao.cs" />
+    <Compile Include="Dao\DirectionDao.cs" />
+    <Compile Include="Dao\InboundCallerTypeDao.cs" />
+    <Compile Include="Dao\CallerTypeDetailDao.cs" />
+    <Compile Include="Dao\InboundStatusDao.cs" />
+    <Compile Include="Dao\InboundTypeDao.cs" />
+    <Compile Include="Dao\InboundTypeDetailDao.cs" />
+    <Compile Include="Dao\CityDao.cs" />
+    <Compile Include="Dao\ListTicketDao.cs" />
+    <Compile Include="Dao\LogBreakDao.cs" />
+    <Compile Include="Dao\LoginHistoryDao.cs" />
+    <Compile Include="Dao\LogMailDao.cs" />
+    <Compile Include="Dao\LogSmsDao.cs" />
+    <Compile Include="Dao\LogVoiceMailDao.cs" />
+    <Compile Include="Dao\MailAttachmentDao.cs" />
+    <Compile Include="Dao\MailCategoryDao.cs" />
+    <Compile Include="Dao\MailStatusDao.cs" />
+    <Compile Include="Dao\ModelDao.cs" />
+    <Compile Include="Dao\MonitorDao.cs" />
+    <Compile Include="Dao\OutboundCallerTypeDao.cs" />
+    <Compile Include="Dao\OutboundCallerTypeDetailDao.cs" />
+    <Compile Include="Dao\OutboundCallMediaDao.cs" />
+    <Compile Include="Dao\OutboundStatusDao.cs" />
+    <Compile Include="Dao\OutboundStatusDetailDao.cs" />
+    <Compile Include="Dao\OutboundTypeDao.cs" />
+    <Compile Include="Dao\OutboundTypeDetailDao.cs" />
+    <Compile Include="Dao\OutboundTypeStatus.cs" />
+    <Compile Include="Dao\OutboundTypeStatusDetailDao.cs" />
+    <Compile Include="Dao\PaymentMethodDao.cs" />
+    <Compile Include="Dao\ProductDao.cs" />
+    <Compile Include="Dao\ProductLocationDao.cs" />
+    <Compile Include="Dao\ProductTypeDao.cs" />
+    <Compile Include="Dao\PromoteDao.cs" />
+    <Compile Include="Dao\QueueActivityDao.cs" />
+    <Compile Include="Dao\ReportBreakDao.cs" />
+    <Compile Include="Dao\ReportCallDao.cs" />
+    <Compile Include="Dao\ReportDailyDao.cs" />
+    <Compile Include="Dao\ReportEmailDao.cs" />
+    <Compile Include="Dao\ReportHourlyDao.cs" />
+    <Compile Include="Dao\ReportLoginDao.cs" />
+    <Compile Include="Dao\ReportPBXDao.cs" />
+    <Compile Include="Dao\ReportPerformanceDao.cs" />
+    <Compile Include="Dao\ReportSmsDao.cs" />
+    <Compile Include="Dao\ShiftDao.cs" />
+    <Compile Include="Dao\SmsCategoryDao.cs" />
+    <Compile Include="Dao\SmsStatusDao.cs" />
+    <Compile Include="Dao\SymptomDao.cs" />
+    <Compile Include="Dao\TagTicketDao.cs" />
+    <Compile Include="Dao\TicketDao.cs" />
+    <Compile Include="Dao\TicketTypeDao.cs" />
+    <Compile Include="Dao\TransferReasonDao.cs" />
+    <Compile Include="Dao\TvSizeDao.cs" />
+    <Compile Include="Dao\UserDao.cs" />
+    <Compile Include="Dao\UserLevelDao.cs" />
+    <Compile Include="Dao\WarrantyStatusDao.cs" />
+    <Compile Include="Entity\Area.cs" />
+    <Compile Include="Entity\BatteryType.cs" />
+    <Compile Include="Entity\BreakReason.cs" />
+    <Compile Include="Entity\Call.cs" />
+    <Compile Include="Entity\CallerType.cs" />
+    <Compile Include="Entity\CallerTypeDetail.cs" />
+    <Compile Include="Entity\CallTag.cs" />
+    <Compile Include="Entity\CallTypeTag.cs" />
+    <Compile Include="Entity\City.cs" />
+    <Compile Include="Entity\DashboardEntity.cs" />
+    <Compile Include="Entity\Department.cs" />
+    <Compile Include="Entity\InboundStatus.cs" />
+    <Compile Include="Entity\Direction.cs" />
+    <Compile Include="Entity\InboundCallerType.cs" />
+    <Compile Include="Entity\InboundType.cs" />
+    <Compile Include="Entity\InboundTypeDetail.cs" />
+    <Compile Include="Entity\ListTicket.cs" />
+    <Compile Include="Entity\LogBreak.cs" />
+    <Compile Include="Entity\LoginHistory.cs" />
+    <Compile Include="Entity\LogLogin.cs" />
+    <Compile Include="Entity\LogMail.cs" />
+    <Compile Include="Entity\LogSms.cs" />
+    <Compile Include="Entity\LogVoiceMail.cs" />
+    <Compile Include="Entity\MailAttachment.cs" />
+    <Compile Include="Entity\MailCategory.cs" />
+    <Compile Include="Entity\MailStatus.cs" />
+    <Compile Include="Entity\Model.cs" />
+    <Compile Include="Entity\Monitoring.cs" />
+    <Compile Include="Entity\OutboundCallerType.cs" />
+    <Compile Include="Entity\OutboundCallMedia.cs" />
+    <Compile Include="Entity\OutboundStatus.cs" />
+    <Compile Include="Entity\OutboundStatusDetail.cs" />
+    <Compile Include="Entity\OutboundType.cs" />
+    <Compile Include="Entity\OutboundTypeDetail.cs" />
+    <Compile Include="Entity\OutboundTypeStatus.cs" />
+    <Compile Include="Entity\OutboundTypeStatusDetail.cs" />
+    <Compile Include="Entity\PaymentMethod.cs" />
+    <Compile Include="Entity\PerformanceInbound.cs" />
+    <Compile Include="Entity\PerformanceOutbound.cs" />
+    <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\ProductLocation.cs" />
+    <Compile Include="Entity\ProductType.cs" />
+    <Compile Include="Entity\Promote.cs" />
+    <Compile Include="Entity\QueueActivity.cs" />
+    <Compile Include="Entity\ReportBreak.cs" />
+    <Compile Include="Entity\ReportCallInbound.cs" />
+    <Compile Include="Entity\ReportCallOutbound.cs" />
+    <Compile Include="Entity\ReportDailyInbound.cs" />
+    <Compile Include="Entity\ReportDailyOutbound.cs" />
+    <Compile Include="Entity\ReportEmail.cs" />
+    <Compile Include="Entity\ReportHourlyInbound.cs" />
+    <Compile Include="Entity\ReportHourlyOutbound.cs" />
+    <Compile Include="Entity\ReportLogin.cs" />
+    <Compile Include="Entity\ReportPBX.cs" />
+    <Compile Include="Entity\ReportPerformanceInbound.cs" />
+    <Compile Include="Entity\ReportPerformanceOutbound.cs" />
+    <Compile Include="Entity\ReportSms.cs" />
+    <Compile Include="Entity\ReportVoiceMail.cs" />
+    <Compile Include="Entity\Role.cs" />
+    <Compile Include="Entity\Shift.cs" />
+    <Compile Include="Entity\SmsCategory.cs" />
+    <Compile Include="Entity\SmsStatus.cs" />
+    <Compile Include="Entity\Symptom.cs" />
+    <Compile Include="Entity\TagTicket.cs" />
+    <Compile Include="Entity\TempTicket.cs" />
+    <Compile Include="Entity\Ticket.cs" />
+    <Compile Include="Entity\TicketType.cs" />
+    <Compile Include="Entity\TransferReason.cs" />
+    <Compile Include="Entity\TvSize.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Entity\UserLevel.cs" />
+    <Compile Include="Entity\WarrantyStatus.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ExportBreak.cs" />
+    <Compile Include="Report\ExportCallInbound.cs" />
+    <Compile Include="Report\ExportCallOutbound.cs" />
+    <Compile Include="Report\ExportDailyInbound.cs" />
+    <Compile Include="Report\ExportDailyOutbound.cs" />
+    <Compile Include="Report\ExportEmail.cs" />
+    <Compile Include="Report\ExportHourlyInbound.cs" />
+    <Compile Include="Report\ExportHourlyOutbound.cs" />
+    <Compile Include="Report\ExportLogin.cs" />
+    <Compile Include="Report\ExportPBX.cs" />
+    <Compile Include="Report\ExportPerformanceInbound.cs" />
+    <Compile Include="Report\ExportPerformanceOutbound.cs" />
+    <Compile Include="Report\ExportSms.cs" />
+    <Compile Include="Report\ExportVoiceMail.cs" />
+    <Compile Include="Report\ReportProperty.cs" />
+    <Compile Include="Utility\CustomTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\DbConnection.cs" />
+    <Compile Include="Utility\DbConnectionQM.cs" />
+    <Compile Include="Utility\FilterUtil.cs" />
+    <Compile Include="Utility\Global.cs" />
+    <Compile Include="Utility\Paging.cs" />
+    <Compile Include="Utility\Telephony.cs" />
+    <Compile Include="Utility\Websocket.cs" />
+    <Compile Include="View\Break.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Break.Designer.cs">
+      <DependentUpon>Break.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CallCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CallCenter.Designer.cs">
+      <DependentUpon>CallCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CallerTypeDetailDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CallerTypeDetailDetails.Designer.cs">
+      <DependentUpon>CallerTypeDetailDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConnectStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConnectStatus.Designer.cs">
+      <DependentUpon>ConnectStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreateTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreateTicket.Designer.cs">
+      <DependentUpon>CreateTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FindEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FindEmail.Designer.cs">
+      <DependentUpon>FindEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FindSms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FindSms.Designer.cs">
+      <DependentUpon>FindSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FindTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FindTicket.Designer.cs">
+      <DependentUpon>FindTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FindVoiceMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FindVoiceMail.Designer.cs">
+      <DependentUpon>FindVoiceMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InboundCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InboundCall.Designer.cs">
+      <DependentUpon>InboundCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CallerTypeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CallerTypeDetail.Designer.cs">
+      <DependentUpon>CallerTypeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CallerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CallerType.Designer.cs">
+      <DependentUpon>CallerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InboundCategoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InboundCategoryDetail.Designer.cs">
+      <DependentUpon>InboundCategoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InfoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InfoDetail.Designer.cs">
+      <DependentUpon>InfoDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InformationDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InformationDetail.Designer.cs">
+      <DependentUpon>InformationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ListAttachment.Designer.cs">
+      <DependentUpon>ListAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MediaPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MediaPlayer.Designer.cs">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Model.Designer.cs">
+      <DependentUpon>Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Monitor.Designer.cs">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Multimedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Multimedia.Designer.cs">
+      <DependentUpon>Multimedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutbondType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OutbondType.Designer.cs">
+      <DependentUpon>OutbondType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutboundCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OutboundCall.Designer.cs">
+      <DependentUpon>OutboundCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutboundTypeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OutboundTypeDetail.Designer.cs">
+      <DependentUpon>OutboundTypeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutboundTypeDetailsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OutboundTypeDetailsDetail.Designer.cs">
+      <DependentUpon>OutboundTypeDetailsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportBreak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportBreak.Designer.cs">
+      <DependentUpon>ReportBreak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportCall.Designer.cs">
+      <DependentUpon>ReportCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportDaily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportDaily.Designer.cs">
+      <DependentUpon>ReportDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportEmail.Designer.cs">
+      <DependentUpon>ReportEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportHourly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportHourly.Designer.cs">
+      <DependentUpon>ReportHourly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportLogin.Designer.cs">
+      <DependentUpon>ReportLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportPBX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportPBX.Designer.cs">
+      <DependentUpon>ReportPBX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportPerformance.Designer.cs">
+      <DependentUpon>ReportPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportSms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportSms.Designer.cs">
+      <DependentUpon>ReportSms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportVoiceMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportVoiceMail.Designer.cs">
+      <DependentUpon>ReportVoiceMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Sms.Designer.cs">
+      <DependentUpon>Sms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TicketManagment.Designer.cs">
+      <DependentUpon>TicketManagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TicketPreview.Designer.cs">
+      <DependentUpon>TicketPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TIcketSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TIcketSearch.Designer.cs">
+      <DependentUpon>TIcketSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransferReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TransferReason.Designer.cs">
+      <DependentUpon>TransferReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserDetail.Designer.cs">
+      <DependentUpon>UserDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Utility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Utility.Designer.cs">
+      <DependentUpon>Utility.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Break.resx">
+      <DependentUpon>Break.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CallCenter.resx">
+      <DependentUpon>CallCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CallerTypeDetailDetails.resx">
+      <DependentUpon>CallerTypeDetailDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConnectStatus.resx">
+      <DependentUpon>ConnectStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreateTicket.resx">
+      <DependentUpon>CreateTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FindEmail.resx">
+      <DependentUpon>FindEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FindSms.resx">
+      <DependentUpon>FindSms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FindTicket.resx">
+      <DependentUpon>FindTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FindVoiceMail.resx">
+      <DependentUpon>FindVoiceMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InboundCall.resx">
+      <DependentUpon>InboundCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CallerTypeDetail.resx">
+      <DependentUpon>CallerTypeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CallerType.resx">
+      <DependentUpon>CallerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InboundCategoryDetail.resx">
+      <DependentUpon>InboundCategoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InfoDetail.resx">
+      <DependentUpon>InfoDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InformationDetail.resx">
+      <DependentUpon>InformationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ListAttachment.resx">
+      <DependentUpon>ListAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MediaPlayer.resx">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Monitor.resx">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Multimedia.resx">
+      <DependentUpon>Multimedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OutbondType.resx">
+      <DependentUpon>OutbondType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OutboundCall.resx">
+      <DependentUpon>OutboundCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OutboundTypeDetail.resx">
+      <DependentUpon>OutboundTypeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OutboundTypeDetailsDetail.resx">
+      <DependentUpon>OutboundTypeDetailsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportBreak.resx">
+      <DependentUpon>ReportBreak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportCall.resx">
+      <DependentUpon>ReportCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportDaily.resx">
+      <DependentUpon>ReportDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportEmail.resx">
+      <DependentUpon>ReportEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportHourly.resx">
+      <DependentUpon>ReportHourly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportLogin.resx">
+      <DependentUpon>ReportLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportPBX.resx">
+      <DependentUpon>ReportPBX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportPerformance.resx">
+      <DependentUpon>ReportPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportSms.resx">
+      <DependentUpon>ReportSms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportVoiceMail.resx">
+      <DependentUpon>ReportVoiceMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sms.resx">
+      <DependentUpon>Sms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TicketManagment.resx">
+      <DependentUpon>TicketManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TicketPreview.resx">
+      <DependentUpon>TicketPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TIcketSearch.resx">
+      <DependentUpon>TIcketSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TransferReason.resx">
+      <DependentUpon>TransferReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserDetail.resx">
+      <DependentUpon>UserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Utility.resx">
+      <DependentUpon>Utility.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-user-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-7-wallpaper-1680x1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utilities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multimedia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_green.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-round-minus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-round-cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+    <Content Include="1390829941_47543.ico" />
+    <None Include="Resources\1471862093_close.png" />
+    <None Include="Resources\logo_kone.png" />
+    <Content Include="Resources\telephone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+[13/01/2017 13:37:18.561]   Starting Telephony v.2015.9.8.0 D7
+[13/01/2017 13:37:18.574]   Activating TCP server..
+[13/01/2017 13:37:18.576]   TCP Server Listening on port : 6093
+[13/01/2017 13:38:57.074]   Starting Telephony v.2015.9.8.0 D7
+[13/01/2017 13:38:57.077]   Activating TCP server..
+[13/01/2017 13:38:57.081]   TCP Server Listening on port : 6093
+[13/01/2017 13:40:50.353]   Starting Telephony v.2015.9.8.0 D7
+[13/01/2017 13:40:50.354]   Activating TCP server..
+[13/01/2017 13:40:50.356]   TCP Server Listening on port : 6093
+[13/01/2017 13:42:29.084]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 13:42:29.088]   Activating TCP server..
+[13/01/2017 13:42:29.092]   TCP Server Listening on port : 6101
+[13/01/2017 13:42:29.479]   Client Connected
+[13/01/2017 13:42:38.144]   UNREGISTER
+[13/01/2017 13:42:38.145]   UNREGISTRATION FAILED
+[13/01/2017 13:42:38.146]   REGISTER|192.168.126.130|2000|ext2000
+[13/01/2017 13:42:38.162]   REGISTRATION SUCCESS
+[13/01/2017 13:42:50.440]   RINGING|2001
+[13/01/2017 13:42:52.775]   PICKUP
+[13/01/2017 13:42:52.777]   Picking up call
+[13/01/2017 13:42:52.802]   Online
+[13/01/2017 13:42:52.809]   Call is picked up
+[13/01/2017 13:43:00.111]   HANGUP|CallCenter2017-01-13INrahmat01.43.00Rahmat.wav|2017-01-13
+[13/01/2017 13:43:00.114]   Request filename : CallCenter2017-01-13INrahmat01.43.00Rahmat.wav
+[13/01/2017 13:43:00.354]   CallCenter2017-01-13INrahmat01.43.00Rahmat.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[13/01/2017 13:43:00.357]   file size : 11683 bytes
+[13/01/2017 13:43:00.358]   Dropping call..
+[13/01/2017 13:43:00.360]   Dropping call done
+[13/01/2017 13:43:00.366]   start wait
+[13/01/2017 13:43:00.369]   stop wait
+[13/01/2017 13:43:00.371]   Unregistered
+[13/01/2017 13:43:00.387]   DISCONNECTED
+[13/01/2017 13:43:22.709]   UNREGISTER
+[13/01/2017 13:43:22.711]   UNREGISTRATION FAILED
+[13/01/2017 13:44:37.181]   UNREGISTER
+[13/01/2017 13:44:37.183]   UNREGISTRATION FAILED
+[13/01/2017 13:45:53.317]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 13:45:53.320]   Activating TCP server..
+[13/01/2017 13:45:53.324]   TCP Server Listening on port : 6101
+[13/01/2017 13:45:53.655]   Client Connected
+[13/01/2017 13:47:35.339]   UNREGISTER
+[13/01/2017 13:47:35.341]   UNREGISTRATION FAILED
+[13/01/2017 13:55:56.515]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 13:55:56.518]   Activating TCP server..
+[13/01/2017 13:55:56.521]   TCP Server Listening on port : 6101
+[13/01/2017 13:55:56.941]   Client Connected
+[13/01/2017 14:23:05.467]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 14:23:05.468]   Activating TCP server..
+[13/01/2017 14:23:05.471]   TCP Server Listening on port : 6101
+[13/01/2017 14:23:05.624]   Client Connected
+[13/01/2017 14:42:07.778]   UNREGISTER
+[13/01/2017 14:42:07.780]   UNREGISTRATION FAILED
+[13/01/2017 16:09:24.151]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 16:09:24.153]   Activating TCP server..
+[13/01/2017 16:09:24.156]   TCP Server Listening on port : 6101
+[13/01/2017 16:09:24.446]   Client Connected
+[13/01/2017 16:10:04.932]   UNREGISTER
+[13/01/2017 16:10:04.934]   UNREGISTRATION FAILED
+[13/01/2017 17:04:26.679]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 17:04:26.684]   Activating TCP server..
+[13/01/2017 17:04:26.687]   TCP Server Listening on port : 6101
+[13/01/2017 17:04:27.078]   Client Connected
+[13/01/2017 17:06:27.304]   UNREGISTER
+[13/01/2017 17:06:27.306]   UNREGISTRATION FAILED
+[13/01/2017 17:06:42.320]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 17:06:42.322]   Activating TCP server..
+[13/01/2017 17:06:42.324]   TCP Server Listening on port : 6101
+[13/01/2017 17:06:42.640]   Client Connected
+[13/01/2017 17:07:15.407]   UNREGISTER
+[13/01/2017 17:07:15.408]   UNREGISTRATION FAILED
+[13/01/2017 17:07:50.847]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 17:07:50.849]   Activating TCP server..
+[13/01/2017 17:07:50.852]   TCP Server Listening on port : 6101
+[13/01/2017 17:07:51.277]   Client Connected
+[13/01/2017 17:11:12.326]   UNREGISTER
+[13/01/2017 17:11:12.328]   UNREGISTRATION FAILED
+[13/01/2017 17:11:52.635]   Starting Telephony v.2016.12.15.0 D7
+[13/01/2017 17:11:52.637]   Activating TCP server..
+[13/01/2017 17:11:52.640]   TCP Server Listening on port : 6101
+[13/01/2017 17:11:52.732]   Client Connected
+[13/01/2017 17:12:58.172]   UNREGISTER
+[13/01/2017 17:12:58.174]   UNREGISTRATION FAILED

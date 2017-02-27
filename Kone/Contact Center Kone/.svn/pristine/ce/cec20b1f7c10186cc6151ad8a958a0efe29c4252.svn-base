@@ -1,0 +1,901 @@
+﻿using System;
+using Newtonsoft;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using CryptSharp;
+using Contact_Center_Kone.Utility;
+using Contact_Center_Kone.Dao;
+using Contact_Center_Kone.Entity;
+using System.Threading;
+using Newtonsoft.Json;
+
+
+namespace Contact_Center_Kone.View
+{
+    public partial class Main : Form
+    {
+        UserDao userdao = new UserDao();
+        QueueActivityDao queueactivitydao = new QueueActivityDao();
+        LogSmsDao logsmsdao = new LogSmsDao();
+        LogMailDao logmaildao = new LogMailDao(); 
+        LogVoiceMailDao logvoicemaildao = new LogVoiceMailDao();
+        Dao.CallDao callDao = new CallDao();
+
+        Thread QueueThread;
+        Thread DatetimeThread;
+        Thread MultimediaThread;
+        Thread BlinkingThread;
+        counting_multi countmilti;
+        QueueActivity queueactivity;
+
+        internal string tempCallId = "";
+        bool logoutMode = false;
+        public string tempTicketIdWebSocket="";
+        public string tempPhoneNoWebSocket = "";
+         
+        public Contact_Center_Kone.Utility.Telephony myTelepon = new Contact_Center_Kone.Utility.Telephony();
+
+        public View.OutboundCall outboundCallForm;
+        public View.InboundCall  inboundCallForm; 
+        public View.Login login;
+        private View.Dashboard dashboadrd; 
+
+        private bool filldashboard = false;
+        private bool fillcallcenter = false;
+        private bool fillCustomer = false;
+        private bool fillticket = false;
+        private bool fillmultimedia = false;
+        private bool fillreport = false;
+        private bool fillutilities = false;
+        private bool fillinfo = false;
+        private bool filllogout = false;
+
+        private bool isInbound = true;
+        //int _log_login_id;  //--1309
+
+        //public Main(int log_login_id = 0)  //--1309
+        //{
+        //    _log_login_id = log_login_id;  //--1309
+        //}
+        public Main()
+        {
+            Global.callState = Global.CallState.OFFLINE;
+            InitializeComponent();
+            Global.mainForm = this;
+            if (Global.userAccount.level != "1")
+                btn_monitoring.Enabled = true;
+            else
+                btn_monitoring.Enabled = false;
+
+
+        }
+
+        class counting_multi{
+            public int count_email { get; set; }
+            public int count_sms { get; set; }
+            public int count_voicemail { get; set; }
+        }
+        private void GetQueueCalls()
+        {
+            try
+            {
+                while (true)
+                {
+                    queueactivity = new QueueActivity();
+                    queueactivity = queueactivitydao.GetQueueActivity();
+                    setLabelTextQueue(lbl_count_ivr, queueactivity.TotalIvrQueue);
+                    setLabelTextQueue(lbl_count_queue, queueactivity.TotalCallQueue);
+                    //setLabelTextQueue(lbl_total_call_system, queueactivity.TotalCallSystem);
+                    //setLabelTextQueue(lbl_abandon_system, queueactivity.TotalAbandonSystem);
+                    //_queue = Convert.ToInt32(queueactivity.TotalCallQueue);
+                    Thread.Sleep(2000);
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                //Global.WriteLog(Global.GetCurrentMethod(Ex));
+            }
+        }
+
+        void GetTime()
+        {
+            while (true)
+            {
+                string time = DateTime.Now.ToString("dddd,dd-MM-yyyy HH:mm:ss");
+                //this.lbl_datetime.Text = DateTime.Now.ToString("dddd,dd-MM-yyyy HH:mm:ss");
+                setLabelTextQueue(lbl_datetime, time);
+                Thread.Sleep(1000);
+            }
+           
+        }
+
+        void GetCountMulti()
+        {
+            while (true)
+            {
+                
+                countmilti = new counting_multi();
+                countmilti.count_email = logmaildao.CountMail();
+                countmilti.count_sms = logsmsdao.CountSms();
+                countmilti.count_voicemail = logvoicemaildao.GetCount_NotReadVoicemail();
+                setLabelTextMulti(lbl_email, countmilti.count_email.ToString());
+                setLabelTextMulti(lbl_sms, countmilti.count_sms.ToString());
+                setLabelTextMulti(lbl_voicemail, countmilti.count_voicemail.ToString());
+
+                if (countmilti.count_email > 0) 
+                    setEnableButton(btn_email,true); 
+                else
+                    setEnableButton(btn_email, false); 
+
+                if (countmilti.count_sms > 0)
+                    setEnableButton(btn_sms, true);
+                else
+                    setEnableButton(btn_sms, false);
+
+                if (countmilti.count_voicemail > 0)
+                    setEnableButton(btn_voicemail, true);
+                else
+                    setEnableButton(btn_voicemail, false);  
+
+                Thread.Sleep(3000);
+            }
+        }
+
+        void blinking_backcolor()
+        {
+            try
+            {
+                while (true)
+                {
+                    if (queueactivity != null)
+                    {
+                        if (Convert.ToInt32(queueactivity.TotalIvrQueue) > 0)
+                        {
+                            if (btn_ivr.BackColor == Color.White)
+                                setLabelColor(btn_ivr, Color.Red);
+                            else
+                                setLabelColor(btn_ivr, Color.White);
+                        }
+                        else
+                            setLabelColor(btn_ivr, Color.White);
+
+                        if (Convert.ToInt32(queueactivity.TotalCallQueue) > 0)
+                        {
+                            if (btn_queue.BackColor == Color.White)
+                                setLabelColor(btn_queue, Color.Red);
+                            else
+                                setLabelColor(btn_queue, Color.White);
+                        }
+                        else
+                            setLabelColor(btn_queue, Color.White);
+                    }
+
+                    Thread.Sleep(1000);
+                }
+            }
+            catch { }
+        }
+
+        #region Delegates
+        delegate void setLabelTextDelegateQueue(Label label, string text);
+        private void setLabelTextQueue(Label label, string text)
+        {
+            if (label.InvokeRequired)
+            {
+                setLabelTextDelegateQueue d = new setLabelTextDelegateQueue(setLabelTextQueue);
+                this.Invoke(d, new Object[] { label, text });
+            }
+             else
+            {
+                label.Text = text;
+            }
+        }
+
+        delegate void setLabelTextDelegateMulti(Label label, string text);
+        private void setLabelTextMulti(Label label, string text)
+        {
+            if (label.InvokeRequired)
+            {
+                setLabelTextDelegateMulti d = new setLabelTextDelegateMulti(setLabelTextMulti);
+                this.Invoke(d, new Object[] { label, text });
+            }
+            else
+            {
+                label.Text = text;
+            }
+        }
+
+        delegate void setButtonDelegateMulti(Button btn, Color clor);
+        private void setLabelColor(Button btn, Color clor)
+        {
+            if (btn.InvokeRequired)
+            {
+                setButtonDelegateMulti d = new setButtonDelegateMulti(setLabelColor);
+                this.Invoke(d, new Object[] { btn, clor });
+            }
+            else
+            {
+                btn.BackColor = clor;
+            }
+        }
+
+        delegate void setButtonEnable(Button btn, bool active);
+        private void setEnableButton(Button btn, bool active)
+        {
+            if (btn.InvokeRequired)
+            {
+                setButtonEnable d = new setButtonEnable(setEnableButton);
+                this.Invoke(d, new Object[] { btn, active });
+            }
+            else
+            {
+                btn.Enabled = active;
+            }
+        }
+        #endregion
+        private void TabpageControl(TabPage tbpage)
+        {
+            tabControl_Master.Controls.Remove(tabPage_Dashboard);
+            tabControl_Master.Controls.Remove(tabPage_CallCenter);
+            tabControl_Master.Controls.Remove(tabPage_Customer);
+            tabControl_Master.Controls.Remove(tabPage_Ticket);
+            tabControl_Master.Controls.Remove(tabPage_Multimedia);
+            tabControl_Master.Controls.Remove(tabPage_Report);
+            tabControl_Master.Controls.Remove(tabPage_Utility);
+            tabControl_Master.Controls.Remove(tabPage_info); 
+            //tabControl_Master.Controls.Add(tbpage);
+        }
+        private void DefaultColorButton(TableLayoutPanel tl_p)
+        {
+            TL_panel_dsboard.BackColor = Color.FromArgb(19, 49, 80);
+            TL_panel_call_center.BackColor = Color.FromArgb(19, 49, 80);
+            //TL_cust_informasi.BackColor = Color.FromArgb(19, 49, 80);
+            TL_panel_ticket_manag.BackColor = Color.FromArgb(19, 49, 80);
+            TL_panel_multimedia.BackColor = Color.FromArgb(19, 49, 80);
+            TL_panel_report.BackColor = Color.FromArgb(19, 49, 80);
+            TL_panel_utilities.BackColor = Color.FromArgb(19, 49, 80);
+            Tl_panel_Informatoion.BackColor = Color.FromArgb(19, 49, 80);
+            Tl_panel_logout.BackColor = Color.FromArgb(19, 49, 80);
+            tl_p.BackColor = Color.Red;
+        }
+
+        private void btn_email_Click(object sender, EventArgs e)
+        {
+            View.Email email = new Email();
+            email.main_form = this;
+            email.enumstatus = Email.MailStatusFrom.Inbox;
+            email.ShowDialog();
+        } 
+        private void btn_sms_Click(object sender, EventArgs e)
+        {
+            View.Sms sms = new Sms();
+            sms.main_form = this;
+            sms.enumstatus = Sms.SmsStatusFrom.Inbox;
+            sms.ShowDialog();
+        }
+
+        private void btn_main_dashboard_Click(object sender, EventArgs e)
+        {
+
+            btn_main_dashboard.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_Dashboard);
+            //Change Button color
+            DefaultColorButton(TL_panel_dsboard);
+            lbl_modul.Text = "Dashboard";
+
+            dashboadrd = new View.Dashboard();
+            dashboadrd.TopLevel = false;
+            dashboadrd.Visible = true;
+            dashboadrd.Dock = DockStyle.Fill;
+            if (!filldashboard)
+            { tabPage_Dashboard.Controls.Add(dashboadrd); filldashboard = true; }
+            else
+            { tabPage_Dashboard.Controls.RemoveAt(0); tabPage_Dashboard.Controls.Add(dashboadrd); }
+            tabControl_Master.Controls.Add(tabPage_Dashboard);
+            btn_main_dashboard.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_callcenter_Click(object sender, EventArgs e)
+        {
+            btn_main_callcenter.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_CallCenter);
+            //Change Button color
+            DefaultColorButton(TL_panel_call_center);
+            lbl_modul.Text = "Call Center";
+
+            var callcenter = new View.CallCenter();
+            callcenter.TopLevel = false;
+            callcenter.Visible = true;
+            callcenter.Dock = DockStyle.Fill;
+            if (!fillcallcenter)
+            { tabPage_CallCenter.Controls.Add(callcenter); fillcallcenter = true; }
+            else
+            { tabPage_CallCenter.Controls.RemoveAt(0); tabPage_CallCenter.Controls.Add(callcenter); }
+            tabControl_Master.Controls.Add(tabPage_CallCenter);
+            btn_main_callcenter.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_cust_Click(object sender, EventArgs e)
+        {
+            //btn_main_cust.Enabled = false;
+            //Cursor.Current = Cursors.WaitCursor;
+
+            ////Change Tabpage
+            //TabpageControl(tabPage_Customer);
+            ////Change Button color
+            //DefaultColorButton(TL_cust_informasi);
+            //lbl_modul.Text = "Customer Informasi";
+
+            //var customer = new View.Customer();
+            //customer.TopLevel = false;
+            //customer.Visible = true;
+            //customer.Dock = DockStyle.Fill;
+            //if (!fillCustomer)
+            //{ tabPage_Customer.Controls.Add(customer); fillCustomer = true; }
+            //else
+            //{ tabPage_Customer.Controls.RemoveAt(0); tabPage_Customer.Controls.Add(customer); }
+            //tabControl_Master.Controls.Add(tabPage_Customer);
+            //btn_main_cust.Enabled = true;
+            //Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_tickets_Click(object sender, EventArgs e)
+        {
+           // myTelepon.MakeCall("2002");
+
+            btn_main_tickets.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_Ticket);
+            //Change Button color
+            DefaultColorButton(TL_panel_ticket_manag);
+            lbl_modul.Text = "Ticket Management";
+
+            var ticket = new View.TicketManagment();
+            ticket.TopLevel = false;
+            ticket.Visible = true;
+            ticket.Dock = DockStyle.Fill;
+
+            if (!fillticket)
+            { tabPage_Ticket.Controls.Add(ticket); fillticket = true; }
+            else
+            { tabPage_Ticket.Controls.RemoveAt(0); tabPage_Ticket.Controls.Add(ticket); }
+            tabControl_Master.Controls.Add(tabPage_Ticket);
+            btn_main_tickets.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_multimedia_Click(object sender, EventArgs e)
+        {
+            btn_main_multimedia.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_Multimedia);
+            //Change Button color
+            DefaultColorButton(TL_panel_multimedia);
+            lbl_modul.Text = "Multimedia";
+
+            var multimedia = new View.Multimedia();
+            multimedia.TopLevel = false;
+            multimedia.Visible = true;
+            multimedia.Dock = DockStyle.Fill;
+            if (!fillmultimedia)
+            { tabPage_Multimedia.Controls.Add(multimedia); fillmultimedia = true; }
+            else
+            { tabPage_Multimedia.Controls.RemoveAt(0); tabPage_Multimedia.Controls.Add(multimedia); }
+            tabControl_Master.Controls.Add(tabPage_Multimedia);
+            btn_main_multimedia.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_reports_Click(object sender, EventArgs e)
+        {
+            btn_main_reports.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_Report);
+            //Change Button color
+            DefaultColorButton(TL_panel_report);
+            lbl_modul.Text = "Report";
+
+            var report = new View.Report();
+            report.TopLevel = false;
+            report.Visible = true;
+            report.Dock = DockStyle.Fill;
+            if (!fillreport)
+            { tabPage_Report.Controls.Add(report); fillreport = true; }
+            else
+            { tabPage_Report.Controls.RemoveAt(0); tabPage_Report.Controls.Add(report); }
+            tabControl_Master.Controls.Add(tabPage_Report);
+            btn_main_reports.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_utilities_Click(object sender, EventArgs e)
+        {
+            btn_main_utilities.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_Utility);
+            //Change Button color
+            DefaultColorButton(TL_panel_utilities);
+            lbl_modul.Text = "Utilities";
+
+            var utility = new View.Utility();
+            utility.TopLevel = false;
+            utility.Visible = true;
+            utility.Dock = DockStyle.Fill;
+            if (!fillutilities)
+            { tabPage_Utility.Controls.Add(utility); fillutilities = true; }
+            else
+            { tabPage_Utility.Controls.RemoveAt(0); tabPage_Utility.Controls.Add(utility); }
+            tabControl_Master.Controls.Add(tabPage_Utility);
+            btn_main_utilities.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btn_main_Info_Click(object sender, EventArgs e)
+        {
+            btn_main_Info.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
+
+            //Change Tabpage
+            TabpageControl(tabPage_info);
+            //Change Button color
+            DefaultColorButton(Tl_panel_Informatoion);
+            lbl_modul.Text = "Information";
+
+            //var information = new View.Information();
+            var information = new View.InfoDetail();
+            information.TopLevel = false;
+            information.Visible = true;
+            information.Dock = DockStyle.Fill;
+
+            if (!fillinfo)
+            {
+                tabPage_info.Controls.Add(information);
+                fillinfo = true; 
+            }
+            else
+            { 
+                tabPage_info.Controls.RemoveAt(0); 
+                tabPage_info.Controls.Add(information); 
+            }
+
+            tabControl_Master.Controls.Add(tabPage_info);
+           this.btn_main_Info.Enabled = true;
+            Cursor.Current = Cursors.Default;
+        }  
+        
+        private void btn_main_logout_Click(object sender, EventArgs e)
+        {
+            if (Global.callState == Global.CallState.READY)
+            {
+                MessageBox.Show("Please Un Ready");
+            }
+            else
+            {
+                callDao.UpdateCurrUniqeID(Global.userAccount.id);//15-11
+                var userDao = new Dao.UserDao().ChangeActivityUser(Global.userAccount.id, "1");
+                userdao.InsertLogin_TotalDuration();
+                if (string.IsNullOrEmpty(Global.tempTokenUser))
+                {
+
+                    if (dashboadrd != null)
+                    {
+
+                        if (dashboadrd.thread_loadchart != null)
+                        {
+                            dashboadrd.thread_loadchart.Abort();
+                        }
+                    }
+
+
+
+                    //if (userdao.InsertLogin_TotalDuration())
+                    //{ }
+                    if (QueueThread != null)
+                        QueueThread.Abort();
+                    if (DatetimeThread != null)
+                        DatetimeThread.Abort();
+                    if (MultimediaThread != null)
+                        MultimediaThread.Abort();
+                    if (BlinkingThread != null)
+                        BlinkingThread.Abort();
+
+
+                    //if (Global.callState == Global.CallState.BUSY)
+                    //{
+                    //    callDao.UpdateAcw(myTelepon.GetDurasi(myTelepon.timerStampBusy), tempCallId);
+                    //    timerBusy.Enabled = false;
+                    //}
+                    this.cmb_chnge_sttus.SelectedIndex = 0;
+                    this.btn_active_non_actived.PerformClick();
+                    this.Close();
+                    login.Show();
+                    return;
+                }
+
+
+            }
+           
+        }
+        private void btn_pickup_Click(object sender, EventArgs e)
+        {
+            if (this.inboundCallForm == null)
+            {
+                this.timerCall.Enabled = false;
+                Global.callState = Global.CallState.INCALL;
+
+                this.btn_pickup.BackColor = Color.FromArgb(19, 49, 80);
+                inboundCallForm = new InboundCall();
+                inboundCallForm.mainForm = this;
+                myTelepon.Pickup();
+                myTelepon.durationDelay = myTelepon.GetDurasi(myTelepon.timerStampRinging);
+                myTelepon.timerStampCall = Convert.ToDateTime(System.DateTime.Now).ToString("dd/MM/yyyy HH:mm:ss");
+                this.btn_pickup.Enabled = false;
+                this.btn_main_logout.Enabled = false;
+                this.TableLayoutPanel19.Enabled = false;
+                userdao.ChangeActivityUser(Global.userAccount.id, "4");
+                inboundCallForm.fromRinging = true;
+                inboundCallForm.ShowDialog();
+                if (Global.callState != Global.CallState.BUSY) 
+                { this.timerCall.Enabled = true; }
+                
+            }                       
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+           
+            if (Global.userAccount.level != "6" && Global.userAccount.level != "2") 
+            {
+                this.btn_main_utilities.Enabled = false;
+                if (Global.userAccount.level == "1")
+                {
+                    this.btn_main_reports.Enabled = false;
+                }
+            } 
+            else 
+            { 
+                this.btn_main_utilities.Enabled = true;
+                this.btn_main_reports.Enabled = true;
+            }
+            TabpageControl(null);
+
+            QueueThread = new Thread(new ThreadStart(GetQueueCalls));
+            QueueThread.Start();
+
+            DatetimeThread = new Thread(new ThreadStart(GetTime));
+            DatetimeThread.Start();
+
+            MultimediaThread = new Thread(new ThreadStart(GetCountMulti));
+            MultimediaThread.Start();
+
+            BlinkingThread = new Thread(new ThreadStart(blinking_backcolor));
+            BlinkingThread.Start();
+
+            this.Text = "Kone Call Center version " + this.ProductVersion;
+
+            this.lbl_UserLogin.Text = Global.userAccount.username;
+            
+            //if (Global.userAccount.level_id == 2 || Global.userAccount.level_id == 6)
+            //    btn_monitoring.Enabled = true;
+            //else
+            //    btn_monitoring.Enabled = false;
+        }
+
+        private void btn_break_Click(object sender, EventArgs e)
+        { 
+            if (Global.callState != Global.CallState.READY)
+            {
+                
+
+                View.Break breakfrom = new Break();
+                breakfrom.mainfrom = this;
+                breakfrom.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please Unregister First");
+            }
+           
+        }
+
+        private void btn_active_non_actived_Click(object sender, EventArgs e)
+        {
+
+            if (Global.callState == Global.CallState.INCALL || Global.callState == Global.CallState.OUTCALL)
+                return;
+
+            this.lbl_status.Text = this.cmb_chnge_sttus.Text;   
+
+            if (this.cmb_chnge_sttus.SelectedIndex == 0)
+            {
+                if (Global.callState == Global.CallState.BUSY)
+                {
+                    callDao.UpdateAcw(myTelepon.GetDurasi(myTelepon.timerStampBusy), tempCallId);
+                    timerBusy.Enabled = false;
+                }
+                this.btn_pickup.BackColor = Color.FromArgb(19, 49, 80);
+                this.btn_outbound.BackColor = Color.FromArgb(19, 49, 80);
+                myTelepon.UnregisterPabx();
+                Global.callState = Global.CallState.OFFLINE;
+                userdao.ChangeActivityUser(Global.userAccount.id,"8");
+                this.timerCall.Enabled = false;
+             
+            }
+            else if (this.cmb_chnge_sttus.SelectedIndex == 1)
+            {
+                if (Global.callState == Global.CallState.BUSY)
+                {
+                    callDao.UpdateAcw(myTelepon.GetDurasi(myTelepon.timerStampBusy), tempCallId);
+                    timerBusy.Enabled = false;
+                }
+
+                this.btn_pickup.BackColor = Color.Yellow;
+                this.btn_outbound.BackColor = Color.FromArgb(19, 49, 80);
+                myTelepon.UnregisterPabx();
+                myTelepon.RegisterToPabx(Global.userAccount.pbx_inbound, Global.userAccount.inbound_ext, Global.userAccount.inbound_ext_pwd);
+                Global.callState = Global.CallState.READY;
+                callDao.UpdateCurrUniqeID(Global.userAccount.id);//15-11
+                isInbound = true;
+                userdao.ChangeActivityUser(Global.userAccount.id, "2");
+                this.timerCall.Enabled = true;
+                                                
+            }
+            else if (this.cmb_chnge_sttus.SelectedIndex == 2)
+            {
+                if (Global.callState == Global.CallState.BUSY)
+                {
+                    callDao.UpdateAcw(myTelepon.GetDurasi(myTelepon.timerStampBusy), tempCallId);
+                    timerBusy.Enabled = false;
+                }
+                this.btn_pickup.BackColor = Color.FromArgb(19, 49, 80);
+                this.btn_outbound.BackColor = Color.Yellow;
+                Global.callState = Global.CallState.READY;
+                myTelepon.UnregisterPabx();
+                myTelepon.RegisterToPabx(Global.userAccount.pbx_outbound, Global.userAccount.outbound_ext, Global.userAccount.outbound_ext_pwd);
+                isInbound = false;
+                userdao.ChangeActivityUser(Global.userAccount.id, "2");
+                this.timerCall.Enabled = true;
+            }
+            
+        }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+            
+        }
+       
+        private void blinkingCallTimer_Tick(object sender, EventArgs e)
+        {
+            if (myTelepon.MessageFromTelephony == "RINGING" && Global.callState == Global.CallState.RINGING)
+            {
+                Global.callState = Contact_Center_Kone.Utility.Global.CallState.RINGING;
+                this.btn_pickup.BackColor = this.btn_pickup.BackColor == Color.FromArgb(19, 49, 80) ?
+                    Color.Red : Color.FromArgb(19, 49, 80);
+                this.btn_pickup.Enabled = true;
+            }
+            else
+            {
+                this.btn_pickup.BackColor = Color.FromArgb(19, 49, 80);
+                this.btn_pickup.Enabled = false;
+            }
+        }
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }    
+
+        private void btn_outbound_Click(object sender, EventArgs e)
+        {
+            //var outboundCall = new View.OutboundCall();
+            //outboundCall.mainForm = this;
+            //outboundCall.StartPosition = FormStartPosition.CenterScreen;
+
+            //outboundCall.ShowDialog();
+
+            if (!isInbound && Global.callState == Global.CallState.READY)
+            {
+                if (this.outboundCallForm == null)
+                {
+                    this.outboundCallForm = new View.OutboundCall(tempTicketIdWebSocket,tempPhoneNoWebSocket);
+                    this.outboundCallForm.mainForm = this;
+                }
+                this.outboundCallForm.ShowDialog();
+            }
+            else { MessageBox.Show("Please register outbound first."); }
+        }
+
+        private void tabPage_Dashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_maximize_Click(object sender, EventArgs e)
+        {
+            //this.btn_main_logout.PerformClick();
+            if (this.outboundCallForm != null)
+            {
+                if (!this.outboundCallForm.Visible)
+                {
+                    btn_maximize.BackColor = Color.LightBlue;
+                    btn_maximize.Text = "";
+                    this.outboundCallForm.ShowDialog();
+                }
+            }
+            else if (this.inboundCallForm != null)
+            {
+                if (!this.inboundCallForm.Visible)
+                {
+                    btn_maximize.BackColor = Color.LightBlue;
+                    btn_maximize.Text = "";
+                    this.inboundCallForm.ShowDialog();
+                }
+            }
+        }
+
+        private void btn_voicemail_Click(object sender, EventArgs e)
+        {
+            View.MediaPlayer mediaplayer = new MediaPlayer();
+            mediaplayer.main_form = this;
+            mediaplayer.enumstatus = MediaPlayer.VoiceMailStatusFrom.Inbox;
+            mediaplayer.ShowDialog();
+        }
+
+        private void timerCall_Tick(object sender, EventArgs e)
+        {
+            if (myTelepon.MessageFromTelephony == "RINGING" && Global.callState == Global.CallState.RINGING)
+            {
+                if (this.WindowState == FormWindowState.Minimized) { this.WindowState = FormWindowState.Maximized; }
+                //Global.callState = Contact_Center_Kone.Utility.Global.CallState.RINGING;
+                this.btn_pickup.BackColor = this.btn_pickup.BackColor == Color.FromArgb(19, 49, 80) ?
+                    Color.Red : Color.FromArgb(19, 49, 80);
+                this.btn_pickup.Enabled = true;
+                Global.unique_id = callDao.CheckCurrUniqeID(Global.userAccount.id);//15-11
+
+            }
+            else if (myTelepon.MessageFromTelephony == "DISCONNECTED" && Global.callState == Global.CallState.RINGING)
+            {
+                Global.callState = Contact_Center_Kone.Utility.Global.CallState.READY;
+                this.btn_pickup.BackColor = Color.FromArgb(19, 49, 80);
+                this.btn_pickup.Enabled = false;
+                myTelepon.RegisterToPabx(Global.userAccount.pbx_inbound, Global.userAccount.inbound_ext, Global.userAccount.inbound_ext_pwd);
+
+
+                //phantom
+                if(Convert.ToDateTime(myTelepon.GetDurasi(myTelepon.timerStampRinging)).Second <= 5)
+                {
+                    callDao.Insert(new Entity.Call() {
+                        callDate = myTelepon.dateTimeCall,
+                      
+                       
+                        user = new Entity.User() { id = Global.userAccount.id },
+                        direction = new Direction() { id=1},
+                        inboundStatus = new InboundStatus() { id=3},
+                        inboundCallerType=new Entity.CallerType(){},                      
+                        outbondStatusDetailName=null,                      
+                        shift = new Shift() { id=Global.shiftId},
+                    
+                        isTestCall="1",
+                        isBlankCall="1",
+                        isWrongNumber="1",
+                        isInquiry = "1",
+                        isComplaint = "1",
+                        isRequest = "1",
+                        isProspectCustomer = "1",
+                      
+                        hostAddress = Global.LocalIPAddress(),
+                        hostName = Global.LocalCompName(),
+                        extension = Global.userAccount.inbound_ext,
+                        abandon=myTelepon.GetDurasi(myTelepon.timerStampRinging),
+                        busy="00:00:00",
+                        callerNumber=myTelepon.CallerNumber
+                    });
+
+                    myTelepon.timerStampRinging = "";
+                }
+                //abandon
+                else if (Convert.ToDateTime(myTelepon.GetDurasi(myTelepon.timerStampRinging)).Second > 5)
+                {
+                    callDao.Insert(new Entity.Call()
+                    {
+
+                        callDate = myTelepon.dateTimeCall,
+                       
+                       
+                        user = new Entity.User() { id = Global.userAccount.id },
+                        direction = new Direction() { id = 1 },
+                        inboundStatus = new InboundStatus() { id = 2 },
+                        inboundCallerType = new Entity.CallerType() { },                     
+                        outbondStatusDetailName = null,
+                        shift = new Shift() { id = Global.shiftId },
+                        
+                        isTestCall="1",
+                        isBlankCall = "1",
+                        isWrongNumber = "1",
+                        isInquiry = "1",
+                        isComplaint = "1",
+                        isRequest = "1",
+                        isProspectCustomer = "1",
+                       
+                        hostAddress = Global.LocalIPAddress(),
+                        hostName = Global.LocalCompName(),
+                        extension = Global.userAccount.inbound_ext,
+                        abandon = myTelepon.GetDurasi(myTelepon.timerStampRinging),
+                        busy = "00:00:00",
+                        callerNumber = myTelepon.CallerNumber
+                    });
+                    myTelepon.timerStampRinging = "";
+                }
+                //UnbookedUser
+                userdao.UnbookedUsers();
+            }
+            else if ( Global.callState == Global.CallState.READY && this.cmb_chnge_sttus.Text=="Inbound : Ready")
+            {
+                this.btn_pickup.BackColor = Color.Yellow;
+                this.btn_pickup.Enabled = false;
+            }
+        }
+
+        private void timerBusy_Tick(object sender, EventArgs e)
+        {
+            var timenow = Convert.ToDateTime(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+            this.lbl_status.Text = "After call work : " + timenow.Subtract(Convert.ToDateTime(myTelepon.timerStampBusy)).ToString();
+
+        }
+
+        private void btn_monitoring_Click(object sender, EventArgs e)
+        {
+            var monitoring = new View.Monitor(false); 
+            monitoring.monitoringOpenBy = Monitor.MonitoringOpenBy.FreeOpen;
+            monitoring.mainform = this;
+            monitoring.ShowDialog();
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            var changePassword = new View.ChangePassword();
+            changePassword.StartPosition = FormStartPosition.CenterScreen;
+            changePassword.ShowDialog();
+
+        }
+
+        private void Main_Activated(object sender, EventArgs e)
+        {
+           
+        }       
+
+             
+    }
+}

@@ -1,0 +1,29 @@
+[20/01/2017 17:12:21.579]   Starting Telephony v.2016.12.15.0 D7
+[20/01/2017 17:12:21.597]   Activating TCP server..
+[20/01/2017 17:12:21.600]   TCP Server Listening on port : 6101
+[20/01/2017 17:12:22.094]   Client Connected
+[20/01/2017 17:14:22.439]   Starting Telephony v.2016.12.15.0 D7
+[20/01/2017 17:14:22.440]   Activating TCP server..
+[20/01/2017 17:14:22.444]   TCP Server Listening on port : 6101
+[20/01/2017 17:14:22.465]   Client Connected
+[20/01/2017 17:14:29.210]   UNREGISTER
+[20/01/2017 17:14:29.212]   UNREGISTRATION FAILED
+[20/01/2017 17:14:29.213]   REGISTER|192.168.3.15|8003|pbx8003
+[20/01/2017 17:14:29.230]   REGISTRATION SUCCESS
+[20/01/2017 17:15:29.237]   Re-register
+[20/01/2017 17:15:29.242]   Unregistered
+[20/01/2017 17:15:30.758]   Re-register success
+[20/01/2017 17:16:29.232]   Re-register
+[20/01/2017 17:16:29.235]   Unregistered
+[20/01/2017 17:16:30.743]   Re-register success
+[20/01/2017 17:17:29.235]   Re-register
+[20/01/2017 17:17:29.238]   Unregistered
+[20/01/2017 17:17:30.754]   Re-register success
+[20/01/2017 17:18:29.232]   Re-register
+[20/01/2017 17:18:29.236]   Unregistered
+[20/01/2017 17:18:30.742]   Re-register success
+[20/01/2017 17:18:58.712]   UNREGISTER
+[20/01/2017 17:18:58.714]   Unregistered
+[20/01/2017 17:18:58.715]   UNREGISTRATION SUCCESS
+[20/01/2017 17:18:59.629]   UNREGISTER
+[20/01/2017 17:18:59.631]   UNREGISTRATION FAILED

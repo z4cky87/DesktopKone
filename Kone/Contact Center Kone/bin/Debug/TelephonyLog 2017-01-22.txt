@@ -1,0 +1,40 @@
+[22/01/2017 08:09:36.424]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:09:36.444]   Activating TCP server..
+[22/01/2017 08:09:36.449]   TCP Server Listening on port : 6101
+[22/01/2017 08:09:36.701]   Client Connected
+[22/01/2017 08:10:02.974]   UNREGISTER
+[22/01/2017 08:10:02.976]   UNREGISTRATION FAILED
+[22/01/2017 08:12:33.703]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:12:33.706]   Activating TCP server..
+[22/01/2017 08:12:33.710]   TCP Server Listening on port : 6101
+[22/01/2017 08:12:34.062]   Client Connected
+[22/01/2017 08:13:46.545]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:13:46.549]   Activating TCP server..
+[22/01/2017 08:13:46.552]   TCP Server Listening on port : 6101
+[22/01/2017 08:13:46.910]   Client Connected
+[22/01/2017 08:15:17.015]   UNREGISTER
+[22/01/2017 08:15:17.017]   UNREGISTRATION FAILED
+[22/01/2017 08:17:32.235]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:17:32.236]   Activating TCP server..
+[22/01/2017 08:17:32.239]   TCP Server Listening on port : 6101
+[22/01/2017 08:17:32.639]   Client Connected
+[22/01/2017 08:19:40.938]   UNREGISTER
+[22/01/2017 08:19:40.939]   UNREGISTRATION FAILED
+[22/01/2017 08:19:50.653]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:19:50.655]   Activating TCP server..
+[22/01/2017 08:19:50.658]   TCP Server Listening on port : 6101
+[22/01/2017 08:19:51.100]   Client Connected
+[22/01/2017 08:21:31.917]   UNREGISTER
+[22/01/2017 08:21:31.919]   UNREGISTRATION FAILED
+[22/01/2017 08:26:43.816]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:26:43.817]   Activating TCP server..
+[22/01/2017 08:26:43.820]   TCP Server Listening on port : 6101
+[22/01/2017 08:26:44.242]   Client Connected
+[22/01/2017 08:28:39.542]   UNREGISTER
+[22/01/2017 08:28:39.544]   UNREGISTRATION FAILED
+[22/01/2017 08:38:35.169]   Starting Telephony v.2016.12.15.0 D7
+[22/01/2017 08:38:35.170]   Activating TCP server..
+[22/01/2017 08:38:35.172]   TCP Server Listening on port : 6101
+[22/01/2017 08:38:35.599]   Client Connected
+[22/01/2017 08:57:32.531]   UNREGISTER
+[22/01/2017 08:57:32.532]   UNREGISTRATION FAILED

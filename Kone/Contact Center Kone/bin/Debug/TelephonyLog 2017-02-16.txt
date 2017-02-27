@@ -1,0 +1,991 @@
+[16/02/2017 09:28:34.046]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 09:28:34.067]   Activating TCP server..
+[16/02/2017 09:28:34.070]   TCP Server Listening on port : 6101
+[16/02/2017 09:28:34.225]   Client Connected
+[16/02/2017 09:29:06.272]   UNREGISTER
+[16/02/2017 09:29:06.274]   UNREGISTRATION FAILED
+[16/02/2017 09:29:06.777]   REGISTER|192.168.126.130|2001|ext2001
+[16/02/2017 09:29:06.796]   REGISTRATION SUCCESS
+[16/02/2017 09:30:06.788]   Re-register
+[16/02/2017 09:30:06.794]   Unregistered
+[16/02/2017 09:30:08.304]   Re-register success
+[16/02/2017 09:31:06.787]   Re-register
+[16/02/2017 09:31:06.790]   Unregistered
+[16/02/2017 09:31:08.300]   Re-register success
+[16/02/2017 09:32:06.789]   Re-register
+[16/02/2017 09:32:06.791]   Unregistered
+[16/02/2017 09:32:08.298]   Re-register success
+[16/02/2017 09:33:06.788]   Re-register
+[16/02/2017 09:33:06.790]   Unregistered
+[16/02/2017 09:33:08.296]   Re-register success
+[16/02/2017 09:34:06.791]   Re-register
+[16/02/2017 09:34:06.796]   Unregistered
+[16/02/2017 09:34:08.314]   Re-register success
+[16/02/2017 09:35:06.789]   Re-register
+[16/02/2017 09:35:06.792]   Unregistered
+[16/02/2017 09:35:08.311]   Re-register success
+[16/02/2017 09:36:06.790]   Re-register
+[16/02/2017 09:36:06.793]   Unregistered
+[16/02/2017 09:36:08.313]   Re-register success
+[16/02/2017 09:37:06.788]   Re-register
+[16/02/2017 09:37:06.790]   Unregistered
+[16/02/2017 09:37:08.296]   Re-register success
+[16/02/2017 09:38:06.789]   Re-register
+[16/02/2017 09:38:06.791]   Unregistered
+[16/02/2017 09:38:08.299]   Re-register success
+[16/02/2017 09:39:06.788]   Re-register
+[16/02/2017 09:39:06.793]   Unregistered
+[16/02/2017 09:39:08.318]   Re-register success
+[16/02/2017 09:40:06.789]   Re-register
+[16/02/2017 09:40:06.791]   Unregistered
+[16/02/2017 09:40:08.300]   Re-register success
+[16/02/2017 09:41:06.789]   Re-register
+[16/02/2017 09:41:06.791]   Unregistered
+[16/02/2017 09:41:08.300]   Re-register success
+[16/02/2017 09:42:06.791]   Re-register
+[16/02/2017 09:42:06.796]   Unregistered
+[16/02/2017 09:42:08.303]   Re-register success
+[16/02/2017 09:43:06.787]   Re-register
+[16/02/2017 09:43:06.789]   Unregistered
+[16/02/2017 09:43:08.301]   Re-register success
+[16/02/2017 09:44:06.789]   Re-register
+[16/02/2017 09:44:06.794]   Unregistered
+[16/02/2017 09:44:08.301]   Re-register success
+[16/02/2017 09:45:06.788]   Re-register
+[16/02/2017 09:45:06.790]   Unregistered
+[16/02/2017 09:45:08.301]   Re-register success
+[16/02/2017 09:46:06.787]   Re-register
+[16/02/2017 09:46:06.791]   Unregistered
+[16/02/2017 09:46:08.298]   Re-register success
+[16/02/2017 09:47:06.788]   Re-register
+[16/02/2017 09:47:06.790]   Unregistered
+[16/02/2017 09:47:08.299]   Re-register success
+[16/02/2017 09:48:06.789]   Re-register
+[16/02/2017 09:48:06.791]   Unregistered
+[16/02/2017 09:48:08.301]   Re-register success
+[16/02/2017 09:49:06.788]   Re-register
+[16/02/2017 09:49:06.791]   Unregistered
+[16/02/2017 09:49:08.298]   Re-register success
+[16/02/2017 09:50:06.787]   Re-register
+[16/02/2017 09:50:06.789]   Unregistered
+[16/02/2017 09:50:08.300]   Re-register success
+[16/02/2017 09:51:06.791]   Re-register
+[16/02/2017 09:51:06.792]   Unregistered
+[16/02/2017 09:51:08.299]   Re-register success
+[16/02/2017 09:52:06.789]   Re-register
+[16/02/2017 09:52:06.795]   Unregistered
+[16/02/2017 09:52:08.305]   Re-register success
+[16/02/2017 09:53:06.790]   Re-register
+[16/02/2017 09:53:06.791]   Unregistered
+[16/02/2017 09:53:08.298]   Re-register success
+[16/02/2017 09:54:06.788]   Re-register
+[16/02/2017 09:54:06.792]   Unregistered
+[16/02/2017 09:54:08.300]   Re-register success
+[16/02/2017 09:55:06.788]   Re-register
+[16/02/2017 09:55:06.794]   Unregistered
+[16/02/2017 09:55:08.303]   Re-register success
+[16/02/2017 09:56:06.787]   Re-register
+[16/02/2017 09:56:06.790]   Unregistered
+[16/02/2017 09:56:08.296]   Re-register success
+[16/02/2017 09:57:06.787]   Re-register
+[16/02/2017 09:57:06.792]   Unregistered
+[16/02/2017 09:57:08.305]   Re-register success
+[16/02/2017 09:58:06.788]   Re-register
+[16/02/2017 09:58:06.790]   Unregistered
+[16/02/2017 09:58:08.303]   Re-register success
+[16/02/2017 09:59:06.789]   Re-register
+[16/02/2017 09:59:06.794]   Unregistered
+[16/02/2017 09:59:08.306]   Re-register success
+[16/02/2017 10:00:04.225]   Re-register
+[16/02/2017 10:00:04.227]   Unregistered
+[16/02/2017 10:00:05.736]   Re-register success
+[16/02/2017 10:01:04.225]   Re-register
+[16/02/2017 10:01:04.227]   Unregistered
+[16/02/2017 10:01:05.737]   Re-register success
+[16/02/2017 10:02:04.223]   Re-register
+[16/02/2017 10:02:04.227]   Unregistered
+[16/02/2017 10:02:05.743]   Re-register success
+[16/02/2017 10:03:04.224]   Re-register
+[16/02/2017 10:03:04.227]   Unregistered
+[16/02/2017 10:03:05.743]   Re-register success
+[16/02/2017 10:04:04.223]   Re-register
+[16/02/2017 10:04:04.229]   Unregistered
+[16/02/2017 10:04:05.753]   Re-register success
+[16/02/2017 10:05:04.225]   Re-register
+[16/02/2017 10:05:04.227]   Unregistered
+[16/02/2017 10:05:05.735]   Re-register success
+[16/02/2017 10:06:04.224]   Re-register
+[16/02/2017 10:06:04.225]   Unregistered
+[16/02/2017 10:06:05.731]   Re-register success
+[16/02/2017 10:07:04.224]   Re-register
+[16/02/2017 10:07:04.226]   Unregistered
+[16/02/2017 10:07:05.737]   Re-register success
+[16/02/2017 10:08:04.223]   Re-register
+[16/02/2017 10:08:04.225]   Unregistered
+[16/02/2017 10:08:05.730]   Re-register success
+[16/02/2017 10:09:04.225]   Re-register
+[16/02/2017 10:09:04.227]   Unregistered
+[16/02/2017 10:09:05.735]   Re-register success
+[16/02/2017 10:10:04.225]   Re-register
+[16/02/2017 10:10:04.227]   Unregistered
+[16/02/2017 10:10:05.734]   Re-register success
+[16/02/2017 10:11:04.225]   Re-register
+[16/02/2017 10:11:04.226]   Unregistered
+[16/02/2017 10:11:05.734]   Re-register success
+[16/02/2017 10:12:04.223]   Re-register
+[16/02/2017 10:12:04.225]   Unregistered
+[16/02/2017 10:12:05.736]   Re-register success
+[16/02/2017 10:13:04.223]   Re-register
+[16/02/2017 10:13:04.224]   Unregistered
+[16/02/2017 10:13:05.731]   Re-register success
+[16/02/2017 10:14:04.222]   Re-register
+[16/02/2017 10:14:04.224]   Unregistered
+[16/02/2017 10:14:05.731]   Re-register success
+[16/02/2017 10:15:04.225]   Re-register
+[16/02/2017 10:15:04.227]   Unregistered
+[16/02/2017 10:15:05.732]   Re-register success
+[16/02/2017 10:16:04.225]   Re-register
+[16/02/2017 10:16:04.227]   Unregistered
+[16/02/2017 10:16:05.733]   Re-register success
+[16/02/2017 10:17:04.223]   Re-register
+[16/02/2017 10:17:04.225]   Unregistered
+[16/02/2017 10:17:05.732]   Re-register success
+[16/02/2017 10:18:04.225]   Re-register
+[16/02/2017 10:18:04.226]   Unregistered
+[16/02/2017 10:18:05.735]   Re-register success
+[16/02/2017 10:19:04.225]   Re-register
+[16/02/2017 10:19:04.227]   Unregistered
+[16/02/2017 10:19:05.737]   Re-register success
+[16/02/2017 10:20:04.223]   Re-register
+[16/02/2017 10:20:04.225]   Unregistered
+[16/02/2017 10:20:05.734]   Re-register success
+[16/02/2017 10:21:04.224]   Re-register
+[16/02/2017 10:21:04.229]   Unregistered
+[16/02/2017 10:21:05.745]   Re-register success
+[16/02/2017 10:22:04.225]   Re-register
+[16/02/2017 10:22:04.229]   Unregistered
+[16/02/2017 10:22:05.736]   Re-register success
+[16/02/2017 10:23:04.223]   Re-register
+[16/02/2017 10:23:04.225]   Unregistered
+[16/02/2017 10:23:05.738]   Re-register success
+[16/02/2017 10:24:04.223]   Re-register
+[16/02/2017 10:24:04.226]   Unregistered
+[16/02/2017 10:24:05.734]   Re-register success
+[16/02/2017 10:25:04.223]   Re-register
+[16/02/2017 10:25:04.225]   Unregistered
+[16/02/2017 10:25:05.734]   Re-register success
+[16/02/2017 10:26:04.224]   Re-register
+[16/02/2017 10:26:04.227]   Unregistered
+[16/02/2017 10:26:05.741]   Re-register success
+[16/02/2017 10:27:04.225]   Re-register
+[16/02/2017 10:27:04.229]   Unregistered
+[16/02/2017 10:27:05.748]   Re-register success
+[16/02/2017 10:28:04.224]   Re-register
+[16/02/2017 10:28:04.226]   Unregistered
+[16/02/2017 10:28:05.741]   Re-register success
+[16/02/2017 10:29:04.223]   Re-register
+[16/02/2017 10:29:04.230]   Unregistered
+[16/02/2017 10:29:05.751]   Re-register success
+[16/02/2017 10:30:04.225]   Re-register
+[16/02/2017 10:30:04.227]   Unregistered
+[16/02/2017 10:30:05.735]   Re-register success
+[16/02/2017 10:31:04.223]   Re-register
+[16/02/2017 10:31:04.228]   Unregistered
+[16/02/2017 10:31:05.739]   Re-register success
+[16/02/2017 10:32:04.225]   Re-register
+[16/02/2017 10:32:04.227]   Unregistered
+[16/02/2017 10:32:05.735]   Re-register success
+[16/02/2017 10:33:04.223]   Re-register
+[16/02/2017 10:33:04.225]   Unregistered
+[16/02/2017 10:33:05.734]   Re-register success
+[16/02/2017 10:34:04.224]   Re-register
+[16/02/2017 10:34:04.228]   Unregistered
+[16/02/2017 10:34:05.741]   Re-register success
+[16/02/2017 10:35:04.223]   Re-register
+[16/02/2017 10:35:04.229]   Unregistered
+[16/02/2017 10:35:05.735]   Re-register success
+[16/02/2017 10:36:04.223]   Re-register
+[16/02/2017 10:36:04.229]   Unregistered
+[16/02/2017 10:36:05.736]   Re-register success
+[16/02/2017 10:37:04.224]   Re-register
+[16/02/2017 10:37:04.226]   Unregistered
+[16/02/2017 10:37:05.733]   Re-register success
+[16/02/2017 10:38:04.224]   Re-register
+[16/02/2017 10:38:04.225]   Unregistered
+[16/02/2017 10:38:05.733]   Re-register success
+[16/02/2017 10:39:04.224]   Re-register
+[16/02/2017 10:39:04.226]   Unregistered
+[16/02/2017 10:39:05.736]   Re-register success
+[16/02/2017 10:40:04.224]   Re-register
+[16/02/2017 10:40:04.227]   Unregistered
+[16/02/2017 10:40:05.784]   Re-register success
+[16/02/2017 10:41:04.230]   Re-register
+[16/02/2017 10:41:04.232]   Unregistered
+[16/02/2017 10:41:05.739]   Re-register success
+[16/02/2017 10:42:04.228]   Re-register
+[16/02/2017 10:42:04.231]   Unregistered
+[16/02/2017 10:42:05.740]   Re-register success
+[16/02/2017 10:43:04.236]   Re-register
+[16/02/2017 10:43:04.238]   Unregistered
+[16/02/2017 10:43:05.746]   Re-register success
+[16/02/2017 10:44:04.228]   Re-register
+[16/02/2017 10:44:04.230]   Unregistered
+[16/02/2017 10:44:05.750]   Re-register success
+[16/02/2017 10:45:04.223]   Re-register
+[16/02/2017 10:45:04.225]   Unregistered
+[16/02/2017 10:45:05.730]   Re-register success
+[16/02/2017 10:46:04.228]   Re-register
+[16/02/2017 10:46:04.231]   Unregistered
+[16/02/2017 10:46:05.746]   Re-register success
+[16/02/2017 10:47:04.223]   Re-register
+[16/02/2017 10:47:04.226]   Unregistered
+[16/02/2017 10:47:05.745]   Re-register success
+[16/02/2017 10:48:04.230]   Re-register
+[16/02/2017 10:48:04.235]   Unregistered
+[16/02/2017 10:48:05.746]   Re-register success
+[16/02/2017 10:49:04.229]   Re-register
+[16/02/2017 10:49:04.233]   Unregistered
+[16/02/2017 10:49:05.752]   Re-register success
+[16/02/2017 10:50:04.225]   Re-register
+[16/02/2017 10:50:04.227]   Unregistered
+[16/02/2017 10:50:05.734]   Re-register success
+[16/02/2017 10:51:04.226]   Re-register
+[16/02/2017 10:51:04.227]   Unregistered
+[16/02/2017 10:51:05.734]   Re-register success
+[16/02/2017 10:52:04.225]   Re-register
+[16/02/2017 10:52:04.232]   Unregistered
+[16/02/2017 10:52:05.750]   Re-register success
+[16/02/2017 10:53:04.229]   Re-register
+[16/02/2017 10:53:04.231]   Unregistered
+[16/02/2017 10:53:05.739]   Re-register success
+[16/02/2017 10:54:04.226]   Re-register
+[16/02/2017 10:54:04.229]   Unregistered
+[16/02/2017 10:54:05.736]   Re-register success
+[16/02/2017 10:55:04.229]   Re-register
+[16/02/2017 10:55:04.231]   Unregistered
+[16/02/2017 10:55:05.739]   Re-register success
+[16/02/2017 10:56:04.224]   Re-register
+[16/02/2017 10:56:04.231]   Unregistered
+[16/02/2017 10:56:05.740]   Re-register success
+[16/02/2017 10:57:04.228]   Re-register
+[16/02/2017 10:57:04.233]   Unregistered
+[16/02/2017 10:57:05.742]   Re-register success
+[16/02/2017 10:58:04.225]   Re-register
+[16/02/2017 10:58:04.227]   Unregistered
+[16/02/2017 10:58:05.739]   Re-register success
+[16/02/2017 10:59:04.225]   Re-register
+[16/02/2017 10:59:04.227]   Unregistered
+[16/02/2017 10:59:05.740]   Re-register success
+[16/02/2017 11:00:04.229]   Re-register
+[16/02/2017 11:00:04.234]   Unregistered
+[16/02/2017 11:00:05.748]   Re-register success
+[16/02/2017 11:01:04.224]   Re-register
+[16/02/2017 11:01:04.228]   Unregistered
+[16/02/2017 11:01:05.733]   Re-register success
+[16/02/2017 11:02:04.225]   Re-register
+[16/02/2017 11:02:04.229]   Unregistered
+[16/02/2017 11:02:05.737]   Re-register success
+[16/02/2017 11:03:04.228]   Re-register
+[16/02/2017 11:03:04.230]   Unregistered
+[16/02/2017 11:03:05.735]   Re-register success
+[16/02/2017 11:04:04.228]   Re-register
+[16/02/2017 11:04:04.232]   Unregistered
+[16/02/2017 11:04:05.739]   Re-register success
+[16/02/2017 11:05:04.223]   Re-register
+[16/02/2017 11:05:04.225]   Unregistered
+[16/02/2017 11:05:05.732]   Re-register success
+[16/02/2017 11:06:04.229]   Re-register
+[16/02/2017 11:06:04.231]   Unregistered
+[16/02/2017 11:06:05.746]   Re-register success
+[16/02/2017 11:07:04.226]   Re-register
+[16/02/2017 11:07:04.229]   Unregistered
+[16/02/2017 11:07:05.737]   Re-register success
+[16/02/2017 11:08:04.223]   Re-register
+[16/02/2017 11:08:04.225]   Unregistered
+[16/02/2017 11:08:05.733]   Re-register success
+[16/02/2017 11:09:04.223]   Re-register
+[16/02/2017 11:09:04.226]   Unregistered
+[16/02/2017 11:09:05.735]   Re-register success
+[16/02/2017 11:10:04.225]   Re-register
+[16/02/2017 11:10:04.231]   Unregistered
+[16/02/2017 11:10:05.740]   Re-register success
+[16/02/2017 11:11:04.229]   Re-register
+[16/02/2017 11:11:04.232]   Unregistered
+[16/02/2017 11:11:05.741]   Re-register success
+[16/02/2017 11:11:49.301]   Client Disconnected..
+[16/02/2017 11:12:04.227]   Re-register
+[16/02/2017 11:12:04.229]   Unregistered
+[16/02/2017 11:12:05.735]   Re-register success
+[16/02/2017 11:13:04.226]   Re-register
+[16/02/2017 11:13:04.232]   Unregistered
+[16/02/2017 11:13:05.746]   Re-register success
+[16/02/2017 11:14:04.232]   Re-register
+[16/02/2017 11:14:04.235]   Unregistered
+[16/02/2017 11:14:05.744]   Re-register success
+[16/02/2017 11:15:04.229]   Re-register
+[16/02/2017 11:15:04.231]   Unregistered
+[16/02/2017 11:15:05.746]   Re-register success
+[16/02/2017 11:16:04.224]   Re-register
+[16/02/2017 11:16:04.227]   Unregistered
+[16/02/2017 11:16:05.734]   Re-register success
+[16/02/2017 11:17:04.229]   Re-register
+[16/02/2017 11:17:04.234]   Unregistered
+[16/02/2017 11:17:05.746]   Re-register success
+[16/02/2017 11:18:04.223]   Re-register
+[16/02/2017 11:18:04.228]   Unregistered
+[16/02/2017 11:18:05.740]   Re-register success
+[16/02/2017 11:19:04.228]   Re-register
+[16/02/2017 11:19:04.233]   Unregistered
+[16/02/2017 11:19:05.745]   Re-register success
+[16/02/2017 11:20:04.230]   Re-register
+[16/02/2017 11:20:04.234]   Unregistered
+[16/02/2017 11:20:05.746]   Re-register success
+[16/02/2017 11:21:04.231]   Re-register
+[16/02/2017 11:21:04.233]   Unregistered
+[16/02/2017 11:21:05.745]   Re-register success
+[16/02/2017 11:22:04.225]   Re-register
+[16/02/2017 11:22:04.227]   Unregistered
+[16/02/2017 11:22:05.734]   Re-register success
+[16/02/2017 11:23:04.228]   Re-register
+[16/02/2017 11:23:04.231]   Unregistered
+[16/02/2017 11:23:05.738]   Re-register success
+[16/02/2017 11:24:04.229]   Re-register
+[16/02/2017 11:24:04.232]   Unregistered
+[16/02/2017 11:24:05.747]   Re-register success
+[16/02/2017 11:25:04.229]   Re-register
+[16/02/2017 11:25:04.231]   Unregistered
+[16/02/2017 11:25:05.743]   Re-register success
+[16/02/2017 11:26:04.229]   Re-register
+[16/02/2017 11:26:04.234]   Unregistered
+[16/02/2017 11:26:05.746]   Re-register success
+[16/02/2017 11:27:04.230]   Re-register
+[16/02/2017 11:27:04.235]   Unregistered
+[16/02/2017 11:27:05.747]   Re-register success
+[16/02/2017 11:28:04.228]   Re-register
+[16/02/2017 11:28:04.231]   Unregistered
+[16/02/2017 11:28:05.741]   Re-register success
+[16/02/2017 11:29:04.224]   Re-register
+[16/02/2017 11:29:04.227]   Unregistered
+[16/02/2017 11:29:05.733]   Re-register success
+[16/02/2017 11:30:04.228]   Re-register
+[16/02/2017 11:30:04.232]   Unregistered
+[16/02/2017 11:30:05.751]   Re-register success
+[16/02/2017 11:31:04.223]   Re-register
+[16/02/2017 11:31:04.226]   Unregistered
+[16/02/2017 11:31:05.748]   Re-register success
+[16/02/2017 11:32:04.230]   Re-register
+[16/02/2017 11:32:04.233]   Unregistered
+[16/02/2017 11:32:05.742]   Re-register success
+[16/02/2017 11:33:04.236]   Re-register
+[16/02/2017 11:33:04.238]   Unregistered
+[16/02/2017 11:33:05.746]   Re-register success
+[16/02/2017 11:34:04.230]   Re-register
+[16/02/2017 11:34:04.233]   Unregistered
+[16/02/2017 11:34:05.755]   Re-register success
+[16/02/2017 11:35:04.227]   Re-register
+[16/02/2017 11:35:04.230]   Unregistered
+[16/02/2017 11:35:05.745]   Re-register success
+[16/02/2017 11:36:04.230]   Re-register
+[16/02/2017 11:36:04.233]   Unregistered
+[16/02/2017 11:36:05.744]   Re-register success
+[16/02/2017 11:37:04.228]   Re-register
+[16/02/2017 11:37:04.231]   Unregistered
+[16/02/2017 11:37:05.742]   Re-register success
+[16/02/2017 11:38:04.223]   Re-register
+[16/02/2017 11:38:04.225]   Unregistered
+[16/02/2017 11:38:05.733]   Re-register success
+[16/02/2017 11:39:04.227]   Re-register
+[16/02/2017 11:39:04.230]   Unregistered
+[16/02/2017 11:39:05.744]   Re-register success
+[16/02/2017 11:40:04.232]   Re-register
+[16/02/2017 11:40:04.237]   Unregistered
+[16/02/2017 11:40:05.747]   Re-register success
+[16/02/2017 11:41:04.228]   Re-register
+[16/02/2017 11:41:04.230]   Unregistered
+[16/02/2017 11:41:05.736]   Re-register success
+[16/02/2017 11:42:04.227]   Re-register
+[16/02/2017 11:42:04.229]   Unregistered
+[16/02/2017 11:42:05.734]   Re-register success
+[16/02/2017 11:43:04.225]   Re-register
+[16/02/2017 11:43:04.227]   Unregistered
+[16/02/2017 11:43:05.735]   Re-register success
+[16/02/2017 11:44:04.228]   Re-register
+[16/02/2017 11:44:04.230]   Unregistered
+[16/02/2017 11:44:05.739]   Re-register success
+[16/02/2017 11:45:04.229]   Re-register
+[16/02/2017 11:45:04.231]   Unregistered
+[16/02/2017 11:45:05.750]   Re-register success
+[16/02/2017 11:46:04.229]   Re-register
+[16/02/2017 11:46:04.231]   Unregistered
+[16/02/2017 11:46:05.749]   Re-register success
+[16/02/2017 11:47:04.230]   Re-register
+[16/02/2017 11:47:04.235]   Unregistered
+[16/02/2017 11:47:05.750]   Re-register success
+[16/02/2017 11:48:04.228]   Re-register
+[16/02/2017 11:48:04.232]   Unregistered
+[16/02/2017 11:48:05.742]   Re-register success
+[16/02/2017 11:49:04.234]   Re-register
+[16/02/2017 11:49:04.239]   Unregistered
+[16/02/2017 11:49:05.754]   Re-register success
+[16/02/2017 11:50:04.223]   Re-register
+[16/02/2017 11:50:04.228]   Unregistered
+[16/02/2017 11:50:05.740]   Re-register success
+[16/02/2017 11:51:04.226]   Re-register
+[16/02/2017 11:51:04.229]   Unregistered
+[16/02/2017 11:51:05.740]   Re-register success
+[16/02/2017 11:52:04.223]   Re-register
+[16/02/2017 11:52:04.229]   Unregistered
+[16/02/2017 11:52:05.745]   Re-register success
+[16/02/2017 11:53:04.228]   Re-register
+[16/02/2017 11:53:04.230]   Unregistered
+[16/02/2017 11:53:05.744]   Re-register success
+[16/02/2017 11:54:04.230]   Re-register
+[16/02/2017 11:54:04.235]   Unregistered
+[16/02/2017 11:54:05.755]   Re-register success
+[16/02/2017 11:55:04.230]   Re-register
+[16/02/2017 11:55:04.234]   Unregistered
+[16/02/2017 11:55:05.744]   Re-register success
+[16/02/2017 11:56:04.232]   Re-register
+[16/02/2017 11:56:04.234]   Unregistered
+[16/02/2017 11:56:05.746]   Re-register success
+[16/02/2017 11:57:04.223]   Re-register
+[16/02/2017 11:57:04.227]   Unregistered
+[16/02/2017 11:57:05.734]   Re-register success
+[16/02/2017 11:58:04.225]   Re-register
+[16/02/2017 11:58:04.230]   Unregistered
+[16/02/2017 11:58:05.742]   Re-register success
+[16/02/2017 11:59:04.224]   Re-register
+[16/02/2017 11:59:04.227]   Unregistered
+[16/02/2017 11:59:05.742]   Re-register success
+[16/02/2017 12:00:04.226]   Re-register
+[16/02/2017 12:00:04.230]   Unregistered
+[16/02/2017 12:00:05.740]   Re-register success
+[16/02/2017 12:01:04.229]   Re-register
+[16/02/2017 12:01:04.236]   Unregistered
+[16/02/2017 12:01:05.757]   Re-register success
+[16/02/2017 12:02:04.231]   Re-register
+[16/02/2017 12:02:04.235]   Unregistered
+[16/02/2017 12:02:05.752]   Re-register success
+[16/02/2017 12:03:04.230]   Re-register
+[16/02/2017 12:03:04.235]   Unregistered
+[16/02/2017 12:03:05.752]   Re-register success
+[16/02/2017 12:04:04.223]   Re-register
+[16/02/2017 12:04:04.225]   Unregistered
+[16/02/2017 12:04:05.733]   Re-register success
+[16/02/2017 12:05:04.224]   Re-register
+[16/02/2017 12:05:04.227]   Unregistered
+[16/02/2017 12:05:05.744]   Re-register success
+[16/02/2017 12:06:04.225]   Re-register
+[16/02/2017 12:06:04.227]   Unregistered
+[16/02/2017 12:06:05.733]   Re-register success
+[16/02/2017 12:07:04.223]   Re-register
+[16/02/2017 12:07:04.228]   Unregistered
+[16/02/2017 12:07:05.738]   Re-register success
+[16/02/2017 12:08:04.224]   Re-register
+[16/02/2017 12:08:04.233]   Unregistered
+[16/02/2017 12:08:05.753]   Re-register success
+[16/02/2017 12:09:04.223]   Re-register
+[16/02/2017 12:09:04.225]   Unregistered
+[16/02/2017 12:09:05.732]   Re-register success
+[16/02/2017 12:10:04.229]   Re-register
+[16/02/2017 12:10:04.234]   Unregistered
+[16/02/2017 12:10:05.752]   Re-register success
+[16/02/2017 12:11:04.223]   Re-register
+[16/02/2017 12:11:04.229]   Unregistered
+[16/02/2017 12:11:05.745]   Re-register success
+[16/02/2017 12:12:04.231]   Re-register
+[16/02/2017 12:12:04.233]   Unregistered
+[16/02/2017 12:12:05.748]   Re-register success
+[16/02/2017 12:13:04.223]   Re-register
+[16/02/2017 12:13:04.225]   Unregistered
+[16/02/2017 12:13:05.734]   Re-register success
+[16/02/2017 12:14:04.235]   Re-register
+[16/02/2017 12:14:04.236]   Unregistered
+[16/02/2017 12:14:05.751]   Re-register success
+[16/02/2017 12:15:04.229]   Re-register
+[16/02/2017 12:15:04.231]   Unregistered
+[16/02/2017 12:15:05.747]   Re-register success
+[16/02/2017 12:16:04.228]   Re-register
+[16/02/2017 12:16:04.233]   Unregistered
+[16/02/2017 12:16:05.745]   Re-register success
+[16/02/2017 12:17:04.229]   Re-register
+[16/02/2017 12:17:04.232]   Unregistered
+[16/02/2017 12:17:05.741]   Re-register success
+[16/02/2017 12:18:04.223]   Re-register
+[16/02/2017 12:18:04.226]   Unregistered
+[16/02/2017 12:18:05.742]   Re-register success
+[16/02/2017 12:19:04.231]   Re-register
+[16/02/2017 12:19:04.234]   Unregistered
+[16/02/2017 12:19:05.743]   Re-register success
+[16/02/2017 12:20:04.226]   Re-register
+[16/02/2017 12:20:04.229]   Unregistered
+[16/02/2017 12:20:05.747]   Re-register success
+[16/02/2017 12:21:04.223]   Re-register
+[16/02/2017 12:21:04.226]   Unregistered
+[16/02/2017 12:21:05.741]   Re-register success
+[16/02/2017 12:22:04.229]   Re-register
+[16/02/2017 12:22:04.232]   Unregistered
+[16/02/2017 12:22:05.743]   Re-register success
+[16/02/2017 12:23:04.228]   Re-register
+[16/02/2017 12:23:04.233]   Unregistered
+[16/02/2017 12:23:05.750]   Re-register success
+[16/02/2017 12:24:04.228]   Re-register
+[16/02/2017 12:24:04.239]   Unregistered
+[16/02/2017 12:24:05.746]   Re-register success
+[16/02/2017 12:25:04.229]   Re-register
+[16/02/2017 12:25:04.231]   Unregistered
+[16/02/2017 12:25:05.743]   Re-register success
+[16/02/2017 12:26:04.229]   Re-register
+[16/02/2017 12:26:04.232]   Unregistered
+[16/02/2017 12:26:05.746]   Re-register success
+[16/02/2017 12:27:04.223]   Re-register
+[16/02/2017 12:27:04.225]   Unregistered
+[16/02/2017 12:27:05.732]   Re-register success
+[16/02/2017 12:28:04.225]   Re-register
+[16/02/2017 12:28:04.229]   Unregistered
+[16/02/2017 12:28:05.744]   Re-register success
+[16/02/2017 12:29:04.231]   Re-register
+[16/02/2017 12:29:04.233]   Unregistered
+[16/02/2017 12:29:05.749]   Re-register success
+[16/02/2017 12:30:04.224]   Re-register
+[16/02/2017 12:30:04.229]   Unregistered
+[16/02/2017 12:30:05.738]   Re-register success
+[16/02/2017 12:31:04.228]   Re-register
+[16/02/2017 12:31:04.231]   Unregistered
+[16/02/2017 12:31:05.749]   Re-register success
+[16/02/2017 12:32:04.228]   Re-register
+[16/02/2017 12:32:04.231]   Unregistered
+[16/02/2017 12:32:05.738]   Re-register success
+[16/02/2017 12:33:04.230]   Re-register
+[16/02/2017 12:33:04.233]   Unregistered
+[16/02/2017 12:33:05.749]   Re-register success
+[16/02/2017 12:34:04.223]   Re-register
+[16/02/2017 12:34:04.230]   Unregistered
+[16/02/2017 12:34:05.745]   Re-register success
+[16/02/2017 12:35:04.229]   Re-register
+[16/02/2017 12:35:04.231]   Unregistered
+[16/02/2017 12:35:05.746]   Re-register success
+[16/02/2017 12:36:04.229]   Re-register
+[16/02/2017 12:36:04.232]   Unregistered
+[16/02/2017 12:36:05.741]   Re-register success
+[16/02/2017 12:37:04.231]   Re-register
+[16/02/2017 12:37:04.233]   Unregistered
+[16/02/2017 12:37:05.742]   Re-register success
+[16/02/2017 12:38:04.230]   Re-register
+[16/02/2017 12:38:04.233]   Unregistered
+[16/02/2017 12:38:05.742]   Re-register success
+[16/02/2017 12:39:04.223]   Re-register
+[16/02/2017 12:39:04.226]   Unregistered
+[16/02/2017 12:39:05.736]   Re-register success
+[16/02/2017 12:40:04.229]   Re-register
+[16/02/2017 12:40:04.231]   Unregistered
+[16/02/2017 12:40:05.742]   Re-register success
+[16/02/2017 12:41:04.224]   Re-register
+[16/02/2017 12:41:04.228]   Unregistered
+[16/02/2017 12:41:05.737]   Re-register success
+[16/02/2017 12:42:04.229]   Re-register
+[16/02/2017 12:42:04.232]   Unregistered
+[16/02/2017 12:42:05.741]   Re-register success
+[16/02/2017 12:43:04.225]   Re-register
+[16/02/2017 12:43:04.230]   Unregistered
+[16/02/2017 12:43:05.748]   Re-register success
+[16/02/2017 12:44:04.228]   Re-register
+[16/02/2017 12:44:04.231]   Unregistered
+[16/02/2017 12:44:05.741]   Re-register success
+[16/02/2017 12:45:04.229]   Re-register
+[16/02/2017 12:45:04.233]   Unregistered
+[16/02/2017 12:45:05.746]   Re-register success
+[16/02/2017 12:46:04.222]   Re-register
+[16/02/2017 12:46:04.225]   Unregistered
+[16/02/2017 12:46:05.733]   Re-register success
+[16/02/2017 12:47:04.224]   Re-register
+[16/02/2017 12:47:04.226]   Unregistered
+[16/02/2017 12:47:05.737]   Re-register success
+[16/02/2017 12:48:04.224]   Re-register
+[16/02/2017 12:48:04.228]   Unregistered
+[16/02/2017 12:48:05.738]   Re-register success
+[16/02/2017 12:49:04.229]   Re-register
+[16/02/2017 12:49:04.233]   Unregistered
+[16/02/2017 12:49:05.747]   Re-register success
+[16/02/2017 12:50:04.230]   Re-register
+[16/02/2017 12:50:04.233]   Unregistered
+[16/02/2017 12:50:05.742]   Re-register success
+[16/02/2017 12:51:04.228]   Re-register
+[16/02/2017 12:51:04.230]   Unregistered
+[16/02/2017 12:51:05.738]   Re-register success
+[16/02/2017 12:52:04.223]   Re-register
+[16/02/2017 12:52:04.228]   Unregistered
+[16/02/2017 12:52:05.738]   Re-register success
+[16/02/2017 12:53:04.229]   Re-register
+[16/02/2017 12:53:04.235]   Unregistered
+[16/02/2017 12:53:05.744]   Re-register success
+[16/02/2017 12:54:04.230]   Re-register
+[16/02/2017 12:54:04.234]   Unregistered
+[16/02/2017 12:54:05.751]   Re-register success
+[16/02/2017 12:55:04.223]   Re-register
+[16/02/2017 12:55:04.226]   Unregistered
+[16/02/2017 12:55:05.733]   Re-register success
+[16/02/2017 12:56:04.228]   Re-register
+[16/02/2017 12:56:04.231]   Unregistered
+[16/02/2017 12:56:05.743]   Re-register success
+[16/02/2017 12:57:04.225]   Re-register
+[16/02/2017 12:57:04.228]   Unregistered
+[16/02/2017 12:57:05.735]   Re-register success
+[16/02/2017 12:58:04.229]   Re-register
+[16/02/2017 12:58:04.233]   Unregistered
+[16/02/2017 12:58:05.745]   Re-register success
+[16/02/2017 12:59:04.223]   Re-register
+[16/02/2017 12:59:04.229]   Unregistered
+[16/02/2017 12:59:05.741]   Re-register success
+[16/02/2017 13:00:04.226]   Re-register
+[16/02/2017 13:00:04.229]   Unregistered
+[16/02/2017 13:00:05.738]   Re-register success
+[16/02/2017 13:01:04.230]   Re-register
+[16/02/2017 13:01:04.233]   Unregistered
+[16/02/2017 13:01:05.747]   Re-register success
+[16/02/2017 13:02:04.224]   Re-register
+[16/02/2017 13:02:04.226]   Unregistered
+[16/02/2017 13:02:05.736]   Re-register success
+[16/02/2017 13:03:04.228]   Re-register
+[16/02/2017 13:03:04.231]   Unregistered
+[16/02/2017 13:03:05.739]   Re-register success
+[16/02/2017 13:04:04.224]   Re-register
+[16/02/2017 13:04:04.226]   Unregistered
+[16/02/2017 13:04:05.743]   Re-register success
+[16/02/2017 13:05:04.230]   Re-register
+[16/02/2017 13:05:04.235]   Unregistered
+[16/02/2017 13:05:05.749]   Re-register success
+[16/02/2017 13:06:04.225]   Re-register
+[16/02/2017 13:06:04.228]   Unregistered
+[16/02/2017 13:06:05.735]   Re-register success
+[16/02/2017 13:07:04.228]   Re-register
+[16/02/2017 13:07:04.231]   Unregistered
+[16/02/2017 13:07:05.746]   Re-register success
+[16/02/2017 13:08:04.229]   Re-register
+[16/02/2017 13:08:04.232]   Unregistered
+[16/02/2017 13:08:05.739]   Re-register success
+[16/02/2017 13:09:04.223]   Re-register
+[16/02/2017 13:09:04.225]   Unregistered
+[16/02/2017 13:09:05.736]   Re-register success
+[16/02/2017 13:10:04.230]   Re-register
+[16/02/2017 13:10:04.233]   Unregistered
+[16/02/2017 13:10:05.747]   Re-register success
+[16/02/2017 13:11:04.231]   Re-register
+[16/02/2017 13:11:04.233]   Unregistered
+[16/02/2017 13:11:05.744]   Re-register success
+[16/02/2017 13:12:04.228]   Re-register
+[16/02/2017 13:12:04.231]   Unregistered
+[16/02/2017 13:12:05.742]   Re-register success
+[16/02/2017 13:13:04.225]   Re-register
+[16/02/2017 13:13:04.228]   Unregistered
+[16/02/2017 13:13:05.734]   Re-register success
+[16/02/2017 13:14:04.226]   Re-register
+[16/02/2017 13:14:04.228]   Unregistered
+[16/02/2017 13:14:05.736]   Re-register success
+[16/02/2017 13:15:04.227]   Re-register
+[16/02/2017 13:15:04.230]   Unregistered
+[16/02/2017 13:15:05.736]   Re-register success
+[16/02/2017 13:16:04.225]   Re-register
+[16/02/2017 13:16:04.226]   Unregistered
+[16/02/2017 13:16:05.738]   Re-register success
+[16/02/2017 13:17:04.230]   Re-register
+[16/02/2017 13:17:04.231]   Unregistered
+[16/02/2017 13:17:05.740]   Re-register success
+[16/02/2017 13:18:04.224]   Re-register
+[16/02/2017 13:18:04.229]   Unregistered
+[16/02/2017 13:18:05.740]   Re-register success
+[16/02/2017 13:19:04.230]   Re-register
+[16/02/2017 13:19:04.235]   Unregistered
+[16/02/2017 13:19:05.744]   Re-register success
+[16/02/2017 13:20:04.226]   Re-register
+[16/02/2017 13:20:04.229]   Unregistered
+[16/02/2017 13:20:05.736]   Re-register success
+[16/02/2017 13:21:04.230]   Re-register
+[16/02/2017 13:21:04.235]   Unregistered
+[16/02/2017 13:21:05.744]   Re-register success
+[16/02/2017 13:22:04.228]   Re-register
+[16/02/2017 13:22:04.230]   Unregistered
+[16/02/2017 13:22:05.737]   Re-register success
+[16/02/2017 13:23:04.229]   Re-register
+[16/02/2017 13:23:04.231]   Unregistered
+[16/02/2017 13:23:05.740]   Re-register success
+[16/02/2017 13:24:04.229]   Re-register
+[16/02/2017 13:24:04.231]   Unregistered
+[16/02/2017 13:24:05.739]   Re-register success
+[16/02/2017 13:25:04.227]   Re-register
+[16/02/2017 13:25:04.231]   Unregistered
+[16/02/2017 13:25:05.740]   Re-register success
+[16/02/2017 13:26:04.224]   Re-register
+[16/02/2017 13:26:04.227]   Unregistered
+[16/02/2017 13:26:05.734]   Re-register success
+[16/02/2017 13:26:32.812]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 13:26:32.815]   Activating TCP server..
+[16/02/2017 13:26:32.820]   TCP Server Listening on port : 6101
+[16/02/2017 13:26:33.117]   Client Connected
+[16/02/2017 13:26:55.554]   UNREGISTER
+[16/02/2017 13:26:55.557]   UNREGISTRATION FAILED
+[16/02/2017 13:26:55.560]   REGISTER|192.168.126.130|2000|ext2000
+[16/02/2017 13:26:55.584]   REGISTRATION SUCCESS
+[16/02/2017 13:27:48.360]   UNREGISTER
+[16/02/2017 13:27:48.363]   Unregistered
+[16/02/2017 13:27:48.370]   UNREGISTRATION SUCCESS
+[16/02/2017 13:27:50.221]   UNREGISTER
+[16/02/2017 13:27:50.223]   UNREGISTRATION FAILED
+[16/02/2017 13:27:50.225]   REGISTER|192.168.126.130|2000|ext2000
+[16/02/2017 13:27:50.232]   REGISTRATION SUCCESS
+[16/02/2017 13:27:50.640]   RINGING|2001
+[16/02/2017 13:27:52.322]   PICKUP
+[16/02/2017 13:27:52.323]   Picking up call
+[16/02/2017 13:27:52.359]   Online
+[16/02/2017 13:27:52.372]   Call is picked up
+[16/02/2017 13:28:30.399]   HANGUP|CallCenter2017-02-16INrahmat01.28.30.wav|2017-02-16
+[16/02/2017 13:28:30.402]   Request filename : CallCenter2017-02-16INrahmat01.28.30.wav
+[16/02/2017 13:28:30.743]   CallCenter2017-02-16INrahmat01.28.30.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 13:28:30.747]   file size : 61668 bytes
+[16/02/2017 13:28:30.749]   Dropping call..
+[16/02/2017 13:28:30.752]   Dropping call done
+[16/02/2017 13:28:30.764]   start wait
+[16/02/2017 13:28:30.766]   stop wait
+[16/02/2017 13:28:30.769]   Unregistered
+[16/02/2017 13:28:30.792]   DISCONNECTED
+[16/02/2017 13:40:10.820]   UNREGISTER
+[16/02/2017 13:40:10.822]   UNREGISTRATION FAILED
+[16/02/2017 13:40:10.824]   REGISTER|192.168.126.130|2000|ext2000
+[16/02/2017 13:40:10.830]   REGISTRATION SUCCESS
+[16/02/2017 13:40:18.104]   UNREGISTER
+[16/02/2017 13:40:18.106]   Unregistered
+[16/02/2017 13:40:18.108]   UNREGISTRATION SUCCESS
+[16/02/2017 13:40:18.111]   REGISTER|||
+[16/02/2017 13:41:29.106]   UNREGISTER
+[16/02/2017 13:41:29.109]   UNREGISTRATION FAILED
+[16/02/2017 13:41:29.112]   REGISTER|192.168.126.130|2000|ext2000
+[16/02/2017 13:41:29.126]   REGISTRATION SUCCESS
+[16/02/2017 13:41:29.302]   RINGING|2001
+[16/02/2017 13:41:35.262]   PICKUP
+[16/02/2017 13:41:35.268]   Picking up call
+[16/02/2017 13:41:35.296]   Online
+[16/02/2017 13:41:35.318]   Call is picked up
+[16/02/2017 13:41:41.076]   HANGUP|CallCenter2017-02-16INrahmat01.41.41.wav|2017-02-16
+[16/02/2017 13:41:41.079]   Request filename : CallCenter2017-02-16INrahmat01.41.41.wav
+[16/02/2017 13:41:41.103]   CallCenter2017-02-16INrahmat01.41.41.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 13:41:41.105]   file size : 9278 bytes
+[16/02/2017 13:41:41.107]   Dropping call..
+[16/02/2017 13:41:41.109]   Dropping call done
+[16/02/2017 13:41:41.111]   start wait
+[16/02/2017 13:41:41.117]   stop wait
+[16/02/2017 13:41:41.119]   Unregistered
+[16/02/2017 13:41:41.139]   DISCONNECTED
+[16/02/2017 13:47:28.958]   UNREGISTER
+[16/02/2017 13:47:28.962]   UNREGISTRATION FAILED
+[16/02/2017 13:47:31.821]   UNREGISTER
+[16/02/2017 13:47:31.825]   UNREGISTRATION FAILED
+[16/02/2017 13:47:31.827]   REGISTER|||
+[16/02/2017 13:47:34.710]   UNREGISTER
+[16/02/2017 13:47:34.712]   UNREGISTRATION FAILED
+[16/02/2017 13:47:34.713]   REGISTER|192.168.126.130|2000|ext2000
+[16/02/2017 13:47:34.718]   REGISTRATION SUCCESS
+[16/02/2017 13:47:35.285]   RINGING|2001
+[16/02/2017 13:47:41.977]   PICKUP
+[16/02/2017 13:47:41.983]   Picking up call
+[16/02/2017 13:47:42.008]   Online
+[16/02/2017 13:47:42.017]   Call is picked up
+[16/02/2017 13:48:07.339]   HANGUP|CallCenter2017-02-16INrahmat01.48.07.wav|2017-02-16
+[16/02/2017 13:48:07.342]   Request filename : CallCenter2017-02-16INrahmat01.48.07.wav
+[16/02/2017 13:48:07.450]   CallCenter2017-02-16INrahmat01.48.07.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 13:48:07.454]   file size : 41063 bytes
+[16/02/2017 13:48:07.456]   Dropping call..
+[16/02/2017 13:48:07.457]   Dropping call done
+[16/02/2017 13:48:07.463]   start wait
+[16/02/2017 13:48:07.466]   stop wait
+[16/02/2017 13:48:07.469]   Unregistered
+[16/02/2017 13:48:07.480]   DISCONNECTED
+[16/02/2017 13:48:28.739]   UNREGISTER
+[16/02/2017 13:48:28.741]   UNREGISTRATION FAILED
+[16/02/2017 13:48:31.872]   UNREGISTER
+[16/02/2017 13:48:31.874]   UNREGISTRATION FAILED
+[16/02/2017 20:18:40.921]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 20:18:40.925]   Activating TCP server..
+[16/02/2017 20:18:40.928]   TCP Server Listening on port : 6101
+[16/02/2017 20:18:41.416]   Client Connected
+[16/02/2017 20:19:03.950]   UNREGISTER
+[16/02/2017 20:19:03.952]   UNREGISTRATION FAILED
+[16/02/2017 20:19:03.955]   REGISTER|192.168.126.130|2001|ext2001
+[16/02/2017 20:19:03.979]   REGISTRATION SUCCESS
+[16/02/2017 20:20:03.975]   Re-register
+[16/02/2017 20:20:03.978]   Unregistered
+[16/02/2017 20:20:05.487]   Re-register success
+[16/02/2017 20:20:15.984]   RINGING|2000
+[16/02/2017 20:20:30.657]   PICKUP
+[16/02/2017 20:20:30.659]   Picking up call
+[16/02/2017 20:20:30.729]   Online
+[16/02/2017 20:20:30.747]   Call is picked up
+[16/02/2017 20:20:36.591]   HANGUP|CallCenter2017-02-16INrahmat08.20.36.wav|2017-02-16
+[16/02/2017 20:20:36.596]   Request filename : CallCenter2017-02-16INrahmat08.20.36.wav
+[16/02/2017 20:20:36.671]   CallCenter2017-02-16INrahmat08.20.36.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 20:20:36.674]   file size : 9213 bytes
+[16/02/2017 20:20:36.678]   Dropping call..
+[16/02/2017 20:20:36.681]   Dropping call done
+[16/02/2017 20:20:36.683]   start wait
+[16/02/2017 20:20:36.685]   stop wait
+[16/02/2017 20:20:36.687]   Unregistered
+[16/02/2017 20:20:36.735]   DISCONNECTED
+[16/02/2017 20:20:41.143]   UNREGISTER
+[16/02/2017 20:20:41.145]   UNREGISTRATION FAILED
+[16/02/2017 20:24:47.056]   UNREGISTER
+[16/02/2017 20:24:47.059]   UNREGISTRATION FAILED
+[16/02/2017 20:24:47.064]   REGISTER|192.168.126.130|2001|ext2001
+[16/02/2017 20:24:47.075]   REGISTRATION SUCCESS
+[16/02/2017 20:25:47.083]   Re-register
+[16/02/2017 20:25:47.088]   Unregistered
+[16/02/2017 20:25:48.599]   Re-register success
+[16/02/2017 20:26:00.797]   RINGING|2000
+[16/02/2017 20:26:37.218]   DISCONNECTED
+[16/02/2017 20:26:37.381]   REGISTER|192.168.126.130|2001|ext2001
+[16/02/2017 20:26:37.390]   REGISTRATION SUCCESS
+[16/02/2017 20:26:47.082]   Re-register
+[16/02/2017 20:26:47.086]   Unregistered
+[16/02/2017 20:26:48.595]   Re-register success
+[16/02/2017 20:27:47.082]   Re-register
+[16/02/2017 20:27:47.095]   Unregistered
+[16/02/2017 20:27:48.611]   Re-register success
+[16/02/2017 20:28:38.612]   RINGING|2000
+[16/02/2017 20:29:23.308]   PICKUP
+[16/02/2017 20:29:23.313]   Picking up call
+[16/02/2017 20:29:23.347]   Online
+[16/02/2017 20:29:23.361]   Call is picked up
+[16/02/2017 20:31:34.728]   HANGUP|CallCenter2017-02-16INrahmat08.31.34.wav|2017-02-16
+[16/02/2017 20:31:34.731]   Request filename : CallCenter2017-02-16INrahmat08.31.34.wav
+[16/02/2017 20:31:35.376]   CallCenter2017-02-16INrahmat08.31.34.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 20:31:35.383]   file size : 213378 bytes
+[16/02/2017 20:31:35.385]   Dropping call..
+[16/02/2017 20:31:35.387]   Dropping call done
+[16/02/2017 20:31:35.389]   start wait
+[16/02/2017 20:31:35.400]   stop wait
+[16/02/2017 20:31:35.403]   Unregistered
+[16/02/2017 20:31:35.424]   DISCONNECTED
+[16/02/2017 20:31:56.931]   UNREGISTER
+[16/02/2017 20:31:56.933]   UNREGISTRATION FAILED
+[16/02/2017 20:32:32.807]   UNREGISTER
+[16/02/2017 20:32:32.809]   UNREGISTRATION FAILED
+[16/02/2017 22:16:27.846]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 22:16:27.848]   Activating TCP server..
+[16/02/2017 22:16:27.854]   TCP Server Listening on port : 6101
+[16/02/2017 22:16:28.249]   Client Connected
+[16/02/2017 22:22:06.191]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 22:22:06.193]   Activating TCP server..
+[16/02/2017 22:22:06.197]   TCP Server Listening on port : 6101
+[16/02/2017 22:22:06.506]   Client Connected
+[16/02/2017 22:23:58.728]   UNREGISTER
+[16/02/2017 22:23:58.731]   UNREGISTRATION FAILED
+[16/02/2017 22:23:58.733]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 22:23:58.761]   REGISTRATION SUCCESS
+[16/02/2017 22:24:26.094]   RINGING|0213862393
+[16/02/2017 22:24:27.168]   PICKUP
+[16/02/2017 22:24:27.171]   Picking up call
+[16/02/2017 22:24:27.195]   Online
+[16/02/2017 22:24:27.212]   Call is picked up
+[16/02/2017 22:24:35.268]   DISCONNECTED
+[16/02/2017 22:24:38.336]   HANGUP|CallCenter2017-02-16INcsr0110.24.38NN.wav|2017-02-16
+[16/02/2017 22:24:38.339]   Request filename : CallCenter2017-02-16INcsr0110.24.38NN.wav
+[16/02/2017 22:24:38.393]   CallCenter2017-02-16INcsr0110.24.38NN.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 22:24:38.396]   file size : 12918 bytes
+[16/02/2017 22:24:38.398]   start wait
+[16/02/2017 22:24:38.400]   stop wait
+[16/02/2017 22:24:38.402]   Unregistered
+[16/02/2017 22:24:39.734]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 22:24:39.742]   REGISTRATION SUCCESS
+[16/02/2017 22:25:01.043]   UNREGISTER
+[16/02/2017 22:25:01.045]   Unregistered
+[16/02/2017 22:25:01.047]   UNREGISTRATION SUCCESS
+[16/02/2017 22:25:02.594]   UNREGISTER
+[16/02/2017 22:25:02.597]   UNREGISTRATION FAILED
+[16/02/2017 23:16:38.633]   Starting Telephony v.2016.12.15.0 D7
+[16/02/2017 23:16:38.636]   Activating TCP server..
+[16/02/2017 23:16:38.640]   TCP Server Listening on port : 6101
+[16/02/2017 23:16:38.747]   Client Connected
+[16/02/2017 23:16:49.395]   UNREGISTER
+[16/02/2017 23:16:49.397]   UNREGISTRATION FAILED
+[16/02/2017 23:16:49.399]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 23:16:49.417]   REGISTRATION SUCCESS
+[16/02/2017 23:17:09.296]   RINGING|2002
+[16/02/2017 23:17:10.507]   PICKUP
+[16/02/2017 23:17:10.509]   Picking up call
+[16/02/2017 23:17:10.545]   Online
+[16/02/2017 23:17:10.574]   Call is picked up
+[16/02/2017 23:17:30.099]   HANGUP|CallCenter2017-02-16INrahmat11.17.30.wav|2017-02-16
+[16/02/2017 23:17:30.103]   Request filename : CallCenter2017-02-16INrahmat11.17.30.wav
+[16/02/2017 23:17:30.261]   CallCenter2017-02-16INrahmat11.17.30.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 23:17:30.264]   file size : 31638 bytes
+[16/02/2017 23:17:30.267]   Dropping call..
+[16/02/2017 23:17:30.269]   Dropping call done
+[16/02/2017 23:17:30.273]   start wait
+[16/02/2017 23:17:30.276]   stop wait
+[16/02/2017 23:17:30.278]   Unregistered
+[16/02/2017 23:17:30.299]   DISCONNECTED
+[16/02/2017 23:18:55.019]   UNREGISTER
+[16/02/2017 23:18:55.022]   UNREGISTRATION FAILED
+[16/02/2017 23:18:55.024]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 23:18:55.035]   REGISTRATION SUCCESS
+[16/02/2017 23:18:55.402]   RINGING|2002
+[16/02/2017 23:19:01.601]   PICKUP
+[16/02/2017 23:19:01.606]   Picking up call
+[16/02/2017 23:19:01.638]   Online
+[16/02/2017 23:19:01.661]   Call is picked up
+[16/02/2017 23:19:07.290]   HANGUP|CallCenter2017-02-16INrahmat11.19.07.wav|2017-02-16
+[16/02/2017 23:19:07.295]   Request filename : CallCenter2017-02-16INrahmat11.19.07.wav
+[16/02/2017 23:19:07.330]   CallCenter2017-02-16INrahmat11.19.07.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 23:19:07.335]   file size : 9018 bytes
+[16/02/2017 23:19:07.337]   Dropping call..
+[16/02/2017 23:19:07.338]   Dropping call done
+[16/02/2017 23:19:07.340]   start wait
+[16/02/2017 23:19:07.342]   stop wait
+[16/02/2017 23:19:07.345]   Unregistered
+[16/02/2017 23:19:07.385]   DISCONNECTED
+[16/02/2017 23:19:13.022]   UNREGISTER
+[16/02/2017 23:19:13.024]   UNREGISTRATION FAILED
+[16/02/2017 23:19:31.136]   UNREGISTER
+[16/02/2017 23:19:31.138]   UNREGISTRATION FAILED
+[16/02/2017 23:19:31.140]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 23:19:31.146]   REGISTRATION SUCCESS
+[16/02/2017 23:19:43.983]   RINGING|2002
+[16/02/2017 23:19:50.321]   PICKUP
+[16/02/2017 23:19:50.327]   Picking up call
+[16/02/2017 23:19:50.364]   Online
+[16/02/2017 23:19:50.402]   Call is picked up
+[16/02/2017 23:19:58.084]   HANGUP|CallCenter2017-02-16INrahmat11.19.58.wav|2017-02-16
+[16/02/2017 23:19:58.086]   Request filename : CallCenter2017-02-16INrahmat11.19.58.wav
+[16/02/2017 23:19:58.122]   CallCenter2017-02-16INrahmat11.19.58.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 23:19:58.127]   file size : 12398 bytes
+[16/02/2017 23:19:58.130]   Dropping call..
+[16/02/2017 23:19:58.132]   Dropping call done
+[16/02/2017 23:19:58.133]   start wait
+[16/02/2017 23:19:58.135]   stop wait
+[16/02/2017 23:19:58.137]   Unregistered
+[16/02/2017 23:19:58.168]   DISCONNECTED
+[16/02/2017 23:21:49.324]   UNREGISTER
+[16/02/2017 23:21:49.327]   UNREGISTRATION FAILED
+[16/02/2017 23:27:03.185]   UNREGISTER
+[16/02/2017 23:27:03.187]   UNREGISTRATION FAILED
+[16/02/2017 23:27:03.189]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 23:27:03.195]   REGISTRATION SUCCESS
+[16/02/2017 23:27:12.980]   RINGING|2002
+[16/02/2017 23:27:27.914]   DISCONNECTED
+[16/02/2017 23:27:27.924]   REGISTER|192.168.0.105|2001|pbx2001
+[16/02/2017 23:27:27.931]   REGISTRATION SUCCESS
+[16/02/2017 23:27:34.439]   RINGING|2002
+[16/02/2017 23:27:59.871]   PICKUP
+[16/02/2017 23:27:59.878]   Picking up call
+[16/02/2017 23:27:59.907]   Online
+[16/02/2017 23:27:59.940]   Call is picked up
+[16/02/2017 23:28:23.759]   HANGUP|CallCenter2017-02-16INrahmat11.28.23.wav|2017-02-16
+[16/02/2017 23:28:23.761]   Request filename : CallCenter2017-02-16INrahmat11.28.23.wav
+[16/02/2017 23:28:23.918]   CallCenter2017-02-16INrahmat11.28.23.wav successfully created. Location : C:\Users\DEVELO~1\AppData\Local\Temp\RecordingTelephony\Kone\Call Center\wav\
+[16/02/2017 23:28:23.925]   file size : 38593 bytes
+[16/02/2017 23:28:23.928]   Dropping call..
+[16/02/2017 23:28:23.930]   Dropping call done
+[16/02/2017 23:28:23.932]   start wait
+[16/02/2017 23:28:23.934]   stop wait
+[16/02/2017 23:28:23.936]   Unregistered
+[16/02/2017 23:28:23.968]   DISCONNECTED
+[16/02/2017 23:28:44.282]   UNREGISTER
+[16/02/2017 23:28:44.284]   UNREGISTRATION FAILED

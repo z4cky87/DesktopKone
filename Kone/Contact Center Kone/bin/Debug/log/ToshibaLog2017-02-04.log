@@ -1,0 +1,103 @@
+[2017-02-04 01:27:36.5326]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:41.5208]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:43.4795]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:44.0920]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:44.3040]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:44.5042]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:27:44.7366]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:28:18.6709]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportPBXDao.cs:line 130 || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:30:02.6067]  GetAllPbx ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportPBXDao.GetAllPbx(String _dte_from, String _dte_until, Int32 _filter_status_call) || Unknown column 'call_monitors.total_agent_ready_outbound' in 'field list'
+[2017-02-04 01:33:10.1057]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-02-04 01:33:11.1226]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-02-04 02:09:51.0436]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-02-04 02:09:52.0789]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-02-04 02:23:10.2165]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\UserDao.cs:line 732 || Truncated incorrect time value: '14685818'
+[2017-02-04 02:23:12.6395]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-02-04 02:23:13.6519]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-02-04 02:32:09.3439]  GetAll ||    at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at Contact_Center_Kone.Dao.CallDao.GetAll() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 492 || Object cannot be cast from DBNull to other types.
+[2017-02-04 02:40:48.9494]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-02-04 02:40:49.9611]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101

@@ -1,0 +1,154 @@
+[2017-01-27 17:11:38.2885]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-27 17:11:39.3011]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-27 17:20:35.4977]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\UserDao.cs:line 732 || Truncated incorrect time value: '60'
+[2017-01-27 17:20:35.6632]  GetQueueActivity ||    at System.WeakReference.get_Target()
+   at System.Transactions.Transaction.JitSafeGetContextTransaction(ContextData contextData)
+   at System.Transactions.Transaction.FastGetTransaction(TransactionScope currentScope, ContextData contextData, Transaction& contextTransaction)
+   at System.Transactions.Transaction.get_Current()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Contact_Center_Kone.Dao.QueueActivityDao.GetQueueActivity() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\QueueActivityDao.cs:line 29 || Thread was being aborted.
+[2017-01-27 17:20:37.5694]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-27 17:20:38.5843]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-27 17:27:20.7822]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 511 || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 17:28:37.6425]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 18:19:32.7941]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 18:19:35.0129]  InsertLogin_TotalDuration ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.UserDao.InsertLogin_TotalDuration() || Truncated incorrect time value: '5266'
+[2017-01-27 18:19:37.0839]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-01-27 20:20:18.3234]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 20:20:25.1796]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 20:21:08.7113]  GetAll_Dynamic_inbound ||    at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) || Column 'direction_id' in where clause is ambiguous
+[2017-01-27 20:21:48.8033]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-01-27 20:21:49.8130]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-27 21:33:32.2999]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:35:27.0934]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:37:35.7024]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:38:03.9885]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:44:47.5694]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:44:51.7156]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-27 21:44:52.7329]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-27 21:52:06.9254]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:13.6674]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:14.7925]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:15.3789]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:15.5969]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:15.7807]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:15.9820]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:16.1645]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:16.3667]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:16.5773]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:16.7643]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:16.9685]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:17.1697]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.
+[2017-01-27 21:52:30.3556]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-27 21:52:31.3690]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-27 22:13:17.7669]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.

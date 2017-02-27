@@ -1,0 +1,6 @@
+[2017-01-28 06:54:17.1619]  GetType_GetTypeDetailsInbound ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Contact_Center_Kone.Dao.ReportCallDao.GetType_GetTypeDetailsInbound(Int32 callid, Int32 typeid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 123 || Fatal error encountered during command execution.
+[2017-01-28 06:54:25.2658]  GetAll_Dynamic_inbound ||    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   at Contact_Center_Kone.Dao.ReportCallDao.GetAll_Dynamic_inbound(String dtefrom, String dteuntil, Int32 userid, Int32 callstatusid) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\ReportCallDao.cs:line 582 || Cannot find column 33.

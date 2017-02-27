@@ -1,0 +1,40 @@
+[27/01/2017 17:10:38.520]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 17:10:38.544]   Activating TCP server..
+[27/01/2017 17:10:38.547]   TCP Server Listening on port : 6101
+[27/01/2017 17:10:38.567]   Client Connected
+[27/01/2017 17:11:36.223]   UNREGISTER
+[27/01/2017 17:11:36.225]   UNREGISTRATION FAILED
+[27/01/2017 17:20:01.864]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 17:20:01.867]   Activating TCP server..
+[27/01/2017 17:20:01.870]   TCP Server Listening on port : 6101
+[27/01/2017 17:20:02.314]   Client Connected
+[27/01/2017 17:20:35.725]   UNREGISTER
+[27/01/2017 17:20:35.727]   UNREGISTRATION FAILED
+[27/01/2017 17:27:06.289]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 17:27:06.290]   Activating TCP server..
+[27/01/2017 17:27:06.292]   TCP Server Listening on port : 6101
+[27/01/2017 17:27:06.643]   Client Connected
+[27/01/2017 18:19:35.109]   UNREGISTER
+[27/01/2017 18:19:35.111]   UNREGISTRATION FAILED
+[27/01/2017 20:10:38.578]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 20:10:38.582]   Activating TCP server..
+[27/01/2017 20:10:38.587]   TCP Server Listening on port : 6101
+[27/01/2017 20:10:39.063]   Client Connected
+[27/01/2017 20:21:46.214]   UNREGISTER
+[27/01/2017 20:21:46.215]   UNREGISTRATION FAILED
+[27/01/2017 21:33:16.749]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 21:33:16.752]   Activating TCP server..
+[27/01/2017 21:33:16.757]   TCP Server Listening on port : 6101
+[27/01/2017 21:33:16.789]   Client Connected
+[27/01/2017 21:44:50.073]   UNREGISTER
+[27/01/2017 21:44:50.075]   UNREGISTRATION FAILED
+[27/01/2017 21:51:45.216]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 21:51:45.218]   Activating TCP server..
+[27/01/2017 21:51:45.222]   TCP Server Listening on port : 6101
+[27/01/2017 21:51:45.702]   Client Connected
+[27/01/2017 21:52:28.471]   UNREGISTER
+[27/01/2017 21:52:28.473]   UNREGISTRATION FAILED
+[27/01/2017 22:07:49.198]   Starting Telephony v.2016.12.15.0 D7
+[27/01/2017 22:07:49.200]   Activating TCP server..
+[27/01/2017 22:07:49.202]   TCP Server Listening on port : 6101
+[27/01/2017 22:07:49.688]   Client Connected

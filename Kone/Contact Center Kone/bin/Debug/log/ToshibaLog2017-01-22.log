@@ -1,0 +1,142 @@
+[2017-01-22 08:10:05.2577]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:10:06.3212]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:12:38.1874]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:12:39.2226]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:15:09.8343]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:15:19.1431]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:15:20.1548]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:19:30.2720]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:19:43.2280]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:19:44.2485]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:21:35.4498]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:21:36.4638]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:27:37.5444]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:27:52.1151]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 1137 || Fatal error encountered during command execution.
+[2017-01-22 08:28:29.1793]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:28:34.4082]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 1137 || Fatal error encountered during command execution.
+[2017-01-22 08:28:41.5480]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 93 || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:28:42.5730]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() in E:\Project Desktop\Kone\Kone\Contact Center Kone\Utility\Telephony.cs:line 53 || No connection could be made because the target machine actively refused it 127.0.0.1:6101
+[2017-01-22 08:39:01.6182]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:39:27.5528]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:39:32.5045]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 1137 || Fatal error encountered during command execution.
+[2017-01-22 08:39:40.7513]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 1137 || Fatal error encountered during command execution.
+[2017-01-22 08:40:11.3243]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 1137 || Fatal error encountered during command execution.
+[2017-01-22 08:40:27.2433]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) in E:\Project Desktop\Kone\Kone\Contact Center Kone\Dao\CallDao.cs:line 718 || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:40:53.2764]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:41:33.7173]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:42:17.6396]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:44:01.1292]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:49:09.1510]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:49:27.8125]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:49:37.5716]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:50:09.2667]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:50:15.2784]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:52:15.6497]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:52:20.0846]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:52:28.8271]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:52:35.9246]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:52:45.8268]  Update ||    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Contact_Center_Kone.Dao.CallDao.Update(Call myCall) || Fatal error encountered during command execution.
+[2017-01-22 08:56:08.6442]  GetById ||    at MySql.Data.Types.MySqlDateTime.GetDateTime()
+   at MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   at MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   at Contact_Center_Kone.Dao.CallDao.GetById(String callId) || Unable to convert MySQL date/time value to System.DateTime
+[2017-01-22 08:57:35.2727]  ReceiveCallback ||    at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at Contact_Center_Kone.Utility.Telephony.ReceiveCallback(IAsyncResult result) || An existing connection was forcibly closed by the remote host
+[2017-01-22 08:57:36.2952]  Start ||    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at Contact_Center_Kone.Utility.Telephony.Start() || No connection could be made because the target machine actively refused it 127.0.0.1:6101

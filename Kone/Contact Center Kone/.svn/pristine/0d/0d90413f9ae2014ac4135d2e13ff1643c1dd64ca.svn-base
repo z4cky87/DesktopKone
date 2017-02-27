@@ -1,0 +1,123 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Contact_Center_Kone.View
+{
+    public partial class Model : Form
+    {
+        public View.InboundCall formInboundCall;
+        private Dao.ModelDao modelDao = new Dao.ModelDao();
+        public Model()
+        {
+            InitializeComponent();
+        }
+
+        private void Model_Load(object sender, EventArgs e)
+        {
+            this.cmbProductType.DataSource = new Dao.ProductTypeDao().GetAll(true);
+            this.cmbProductType.ValueMember = "id";
+            this.cmbProductType.DisplayMember = "name";
+
+            LoadAllModel();
+
+
+        }
+
+        private void LoadAllModel()
+        {
+            this.dtgridModel.DataSource = modelDao.GetAllModel();
+            this.dtgridModel.Columns[0].Visible = false;
+            this.dtgridModel.Columns[1].HeaderText = "Product Type";
+            this.dtgridModel.Columns[1].Width = 200;
+            this.dtgridModel.Columns[2].HeaderText = "Model";
+            this.dtgridModel.Columns[2].Width = 200;
+        }
+
+        private void dtgridModel_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void dtgridModel_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgridModel_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            try
+            {
+
+                formInboundCall.modelId = this.dtgridModel.SelectedCells[0].Value.ToString();
+                formInboundCall.txtModel.Text = this.dtgridModel.SelectedCells[1].Value.ToString() + " - " +
+                                                this.dtgridModel.SelectedCells[2].Value.ToString();
+                this.DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch
+            {
+
+
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            this.dtgridModel.DataSource = modelDao.GetAllModel(this.cmbProductType.SelectedValue.ToString(),this.txtModel.Text);
+            this.dtgridModel.Columns[0].Visible = false;
+            this.dtgridModel.Columns[1].HeaderText = "Product Type";
+            this.dtgridModel.Columns[1].Width = 200;
+            this.dtgridModel.Columns[2].HeaderText = "Model";
+            this.dtgridModel.Columns[2].Width = 200;
+        }
+
+        private void cmbProductType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(this.cmbProductType.SelectedIndex>0)
+            {
+                this.btnSearch.Enabled = true;
+            }
+            else if (this.cmbProductType.SelectedIndex == 0)
+            {
+                if(String.IsNullOrEmpty(this.txtModel.Text))
+                {
+                 this.btnSearch.Enabled = false;
+                }
+                else
+                {
+                    this.btnSearch.Enabled = true;
+                }
+            }
+
+        }
+
+        private void txtModel_TextChanged(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(this.txtModel.Text))
+            {
+                if(this.cmbProductType.SelectedIndex==0)
+                     this.btnSearch.Enabled = false;
+                else
+                    this.btnSearch.Enabled = true;
+            }
+            else
+            {
+                this.btnSearch.Enabled = true;
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.cmbProductType.SelectedIndex = 0;
+            this.txtModel.Clear();
+
+            LoadAllModel();
+        }
+    }
+}
